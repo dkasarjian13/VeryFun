@@ -1,0 +1,411 @@
+/*!
+   ckin v0.0.1: Custom HTML5 Video Player Skins.
+   (c) 2017 
+   MIT License
+   git+https://github.com/hunzaboy/ckin.git
+*/
+@font-face {
+    font-family: 'ckin';
+    src: url("fonts/ckin_g02cfx.eot");
+    src: url("fonts/ckin_g02cfx.eot#iefix") format("embedded-opentype"), url("fonts/ckin_g02cfx.ttf") format("truetype"), url("fonts/ckin_g02cfx.woff") format("woff"), url("fonts/ckin_g02cfx.svg#ckin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="ckin-"], [class*=" ckin-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ckin' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root{
+    --serif:"tesseractweb-lightitalic";
+    --sans:"WhyteInktrap-Light";
+    --highlight:#00ff00;
+    --black:black;
+    --border-radius:6px;
+    --black-hover:rgb(90, 90, 90);
+    --lightgray:#fbfbfb;
+    --ghostgray:#F2F2F4;
+    --navgrey:#BEC3CC;
+    --gold:#FFB100;
+    --twilightgrey:#a7a7a7;
+    --darktwilight:#838383;
+    --green:#7FFE00;
+    --white:white;
+    --purple:#601df8;
+    --yellow:rgb(240, 225, 26);
+    --ratio:1.25;
+    --ms-0:2px;
+    --ms--1:calc(var(--ms-0) / var(--ratio));
+    --ms-1:calc(var(--ms-0) * var(--ratio));
+    --ms-2:calc(var(--ms-1) * var(--ratio));
+    --ms-3:calc(var(--ms-2) * var(--ratio));
+    --ms-4:calc(var(--ms-3) * var(--ratio));
+    --ms-5:calc(var(--ms-4) * var(--ratio));
+    --ms-6:calc(var(--ms-5) * var(--ratio));
+    --ms-7:calc(var(--ms-6) * var(--ratio))
+
+}
+  
+  .ckin-compress:before {
+    content: url(../assets/images/videobuttons/fullscreen-button-min.svg);
+  }
+  
+  .ckin-expand:before {
+    content: url(../assets/images/videobuttons/fullscreen-button.svg);
+  }
+  
+  .ckin-play:before {
+    transform: scale(.75);
+    content: url(../assets/images/videobuttons/playbutton.svg);
+  }
+  
+  .ckin-pause:before {
+    content: url(../assets/images/videobuttons/pausebutton.svg);
+  }
+  
+  .ckin-stop:before {
+    content: "\ea1e";
+  }
+  
+  .ckin-backward:before {
+    content: "\ea1f";
+  }
+  
+  .ckin-forward:before {
+    content: "\ea20";
+  }
+  
+  .ckin-volume-high:before {
+    content: url(../assets/images/videobuttons/volumebuttonloud-face.svg);
+  }
+  
+  .ckin-volume-medium:before {
+    content: url(../assets/images/videobuttons/volumebuttonloud-face.svg);
+  }
+  
+  .ckin-volume-low:before {
+    content: url(../assets/images/videobuttons/volumebuttonlow-face.svg);
+  }
+  
+  .ckin-volume-mute:before {
+    content: url(../assets/images/videobuttons/volumebuttonmute-face.svg);
+  }
+  
+  body {
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .ckin__player:before{
+    content: "Up in Flames";
+  }
+  
+  .ckin__player {
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    letter-spacing: 0.02em;
+  }
+  
+  .ckin__player.ckin__fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    background: #000;
+    border-radius: 0 !important;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .ckin__overlay {
+    position: relative;
+  }
+  
+  .ckin__overlay:before {
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  }
+  
+  .ckin__overlay--2:before {
+    background: rgba(24, 24, 24, 0.8);
+  }
+  
+  .default {
+    border: 0 solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom:0px;
+  }
+  
+  .default:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px;
+    transition: opacity .2s;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ckin-video__title{
+    white-space: nowrap;
+    font-family: var(--serif) !important;
+  }
+  
+  .default__title {
+    position: absolute;
+    display: inline-block;
+    transition: all .3s;
+    font-family: inherit;
+    font-size: 32px;
+    left: 81px;
+    bottom: 15px;
+    letter-spacing: -.1rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .default__title span {
+    position: absolute;
+    font-family: var(--sans);
+    font-size: inherit;
+    left: 100px;
+    letter-spacing: -.1rem;
+
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  #demo {
+    color: var(--green);
+    /* margin-bottom: 13px; */
+    transition: all .3s;
+    margin top: 26px !important;
+    position: relative;
+    /* left: 85px; */
+    font-size: 20px;
+    font-family: var(--sans);
+    line-height: 1.4em;
+    /* bottom: -6px;*/
+}
+  
+  .default__button {
+    background: none;
+    border: 0;
+    line-height: 1;
+    color: #FFFFFF;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    -ms-flex-pack: center;
+        justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 50px;
+    max-height: 1rem;
+    
+  }
+  
+  .default__button i {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  
+  .default__button--big {
+    background: none;
+    border: 0;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    font-size: 64px !important;
+    transition: all .2s;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+  }
+  
+  .default__slider {
+    width: 10px;
+    height: 30px;
+  }
+  
+  .default__controls {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all .3s;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: black;
+    font-size: 32px;
+    -ms-flex-align: center;
+        align-items: center;
+        padding: 29px 10px 10px 10px;
+    -ms-transform: translateY(0);
+        transform: translateY(0);
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border-radius: 0 0 0px 0px;
+  }
+  
+  .default.is-playing:before {
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .default.is-playing .default__button--big {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .default.is-playing .default__title{
+      -ms-transform: translateY(80px);
+        transform: translateY(80px);
+  }
+
+
+  
+.default.is-playing#demo {
+  -ms-transform: translateY(80px);
+  transform: translateY(80px);
+}
+
+
+  .default.is-playing:hover .default__title {
+    -ms-transform: translateY(0);
+        transform: translateY(0);
+  }
+  
+  .default.is-playing .default__controls {
+    -ms-transform: translateY(80px);
+        transform: translateY(80px);
+  }
+  
+  .default.is-playing:hover .default__controls {
+    -ms-transform: translateY(0);
+        transform: translateY(0);
+  }
+  
+  .default__controls > * {
+    -ms-flex: 1;
+        flex: 1;
+  }
+  
+  .default .progress {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    height: 6px;
+    margin-top: 2rem;
+    transition: height 0.3s;
+    bottom: -10px;
+    background: var(--purple);
+    cursor: pointer;
+    border-radius: 0px;
+
+}
+  
+  .default .progress__filled {
+    width: 0%;
+    background: var(--green);
+    -ms-flex: 0;
+        flex: 0;
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+    border-radius: 0px;
+  }
+  
+  
+
+  
+  video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+
+.ckin__player * {
+}
+
+.default__button {
+  padding: 0px 40px 11px 32px !Important;
+  max-width: 40px !Important; 
+  max-height: 40px !Important;
+}
+
+.default__button--big * {
+  font-size:5vw !Important;
+}
+
+@media (max-width: 800px) {
+  .ckin__player button {
+    font-size: 18px;
+  }
+  .default__button--big * {
+    font-size:10vw !Important;
+  }
+
+
+
+  .default__title {
+    position: absolute;
+    width: 100%;
+    transition: all .3s;
+    font-family: var(--serif);
+    font-size: 23px;
+    left: 84px;
+
+    letter-spacing: -.1rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+  .default__title span{
+    position: absolute;
+    font-family: var(--sans);
+    font-size: inherit;
+    left: 64px;
+    letter-spacing: -.1rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+}

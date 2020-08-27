@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.333" height="64.333" viewBox="0 0 64.333 64.333">
+  <g id="Group_1738" data-name="Group 1738" transform="translate(-1722.854 -2667.222)">
+    <g id="Group_1733" data-name="Group 1733">
+      <text id="_" data-name="←" transform="translate(1760.746 2690.556) rotate(-135)" fill="#00fe00" font-size="27" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">←</tspan></text>
+      <text id="_2" data-name="←" transform="matrix(-0.707, 0.707, 0.707, 0.707, 1760.331, 2707.805)" fill="#00fe00" font-size="27" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">←</tspan></text>
+      <text id="_3" data-name="←" transform="matrix(0.707, -0.707, -0.707, -0.707, 1749.711, 2690.972)" fill="#00fe00" font-size="27" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">←</tspan></text>
+      <text id="_4" data-name="←" transform="translate(1749.295 2708.221) rotate(45)" fill="#00fe00" font-size="27" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">←</tspan></text>
+      <text id="_5" data-name="!" transform="translate(1751 2701)" fill="#00fe00" font-size="28" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">!</tspan></text>
+      <text id="_6" data-name="!" transform="matrix(1, 0, 0, -1, 1751, 2698)" fill="#00fe00" font-size="28" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">!</tspan></text>
+      <text id="_7" data-name="!" transform="matrix(0, 1, 1, 0, 1756.105, 2695.846)" fill="#00fe00" font-size="27" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">!</tspan></text>
+    </g>
+    <text id="_8" data-name="!" transform="translate(1753.105 2695.846) rotate(90)" fill="#00fe00" font-size="27" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>
