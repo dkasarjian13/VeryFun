@@ -1298,7 +1298,7 @@ object-fit: cover;
 }
 
 .section {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	position: relative;
 	border-top: 1px solid #601df8;	padding-bottom: 8px;
 	padding-top: 20px !important;
@@ -1380,10 +1380,11 @@ object-fit: cover;
 .slideshow h1 {
     padding: 0px 0px 18px 18px;
     font-family: "WhyteInktrap-Light";
-    text-transform: uppercase;
-	text-align: left;
-	color: #601df8;
-	font-size: 26px;
+    /* text-transform: uppercase; */
+    text-align: left;
+    color: #601df8;
+    letter-spacing: -.05em;
+    font-size: 40px;
 }
 
 .slideshow h1 section-title-right{
@@ -1536,6 +1537,10 @@ letter-spacing: -4px;
 	z-index: 2;
 	background-color:none;
 }
+
+#intro {
+    margin-bottom: 4px;
+    display: inline-block;}
 
 .Painkiller.section#header{
     background-color: var(--midnight);
@@ -1716,7 +1721,7 @@ letter-spacing: -4px;
 }
 
 .section.black * {
-	color: #fff;
+	color: rgb(198, 198, 198);
 }
 
 .section.black .caption {
@@ -2746,10 +2751,18 @@ strong {
         height: auto;
     }
 
-.layout1,
+.layoutphotogrid{
+    background: var(--midnight);
+    padding-top: 4px;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+
 .layout2,
 .layout3,
-.layout4 {
+.layout4,
+.layoutphotogrid {
     width: 100%;
     height: auto;
     /*float: left;*/
@@ -2784,7 +2797,8 @@ strong {
 .layout7 img,
 .layout7 video,
 .layout8 img,
-.layout8 video  {
+.layout8 video,
+.layoutphotogrid img {
     width: 100%;
     height: 100%;
    
@@ -2798,13 +2812,20 @@ strong {
 
 .layout1>div {
     width: calc(100% - 2px);
-    padding-left: 4px;
+
     height: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    /*padding-top: 4px;
+      padding-left: 4px;
+    padding-bottom: 4px;*/
 }
 
+.layoutphotogrid>div {
+    width: calc(25% - 3.22px);
+    height: auto;
+    display: inline-block;
 
+    box-sizing: border-box;
+}
 .layout2>div {
     width: calc(50% - 1px);
     height: 36.125vw;
