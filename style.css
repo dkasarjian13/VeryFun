@@ -1547,7 +1547,7 @@ letter-spacing: -4px;
     margin-bottom: 4px;
     display: inline-block;}
 
-.Painkiller.section#header{
+.Painkiller.section#header, .Noscento.section#header{
     background-color: var(--midnight);
 }
 
