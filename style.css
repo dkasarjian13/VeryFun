@@ -1140,6 +1140,17 @@ div.thirdwidth-project.aos-init.aos-animate{
     background-image: url(assets/images/thumbs/projects/TOOHARD/heroimage/TOO-HARD-HERO.jpg)
 }
 
+.flex-container-halfpage-left {
+    border-right: 5px solid #fff;
+    flex-basis: 50%;
+    display: flex;
+    position: relative;
+   height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .flex-container-halfpage-right {
     border-left: 5px solid #fff;
     flex-basis: 50%;
@@ -2603,12 +2614,24 @@ div.halfwidth-project.aos-init.aos-animate{
 }
 
 .halfwidthproject-container{
-    display: block;
+    display: inline-table;
     height: 42rem;
 }
 
 .flex-container-halfpage-left-wj, .flex-container-halfpage-left-toohard{
     border-right: none;
+    flex-basis: none;
+    position: none;
+    height: 43vh;
+    padding: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.flex-container-halfpage-left{
+    border-right: none;
+    border-left: none;
     flex-basis: none;
     position: none;
     height: 43vh;
