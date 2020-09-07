@@ -3100,7 +3100,12 @@ strong {
     .layout1>div,
     .layout2>div,
     .layout3>div,
-    .layout4>div {
+    .layout4>div,
+    .layout8,
+    .layout8>div,
+    .layout8two,
+    .layout8three {
+        display: contents;
         width: 100% !important;
         height: auto !important;
         float: left !important;
