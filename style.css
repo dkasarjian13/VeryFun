@@ -1034,7 +1034,7 @@ nav.header .navigation * {
     display: block;
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 75vh;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1046,7 +1046,7 @@ nav.header .navigation * {
     display: block;
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 75vh;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1059,7 +1059,7 @@ nav.header .navigation * {
     display: flex;
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 75vh;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1931,6 +1931,51 @@ letter-spacing: -4px;
 	padding: 9px;
 }
 
+  /***************************************** TICKER *****************************************/
+
+
+#tickerwrap {
+    width: 100%;
+  position: fixed;
+  bottom:0;
+    overflow: hidden;
+  backdrop-filter: blur(4px);
+    color: #fff;
+  }
+  
+
+  /* Formatting the ticker content background, font color, padding and exit state */
+  @keyframes customticker {
+    0% {
+      -webkit-transform: translate3d(0%, 0, 0);
+      transform: translate3d(0%, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  #ticker {
+    display: inline-block;
+    white-space: nowrap;
+          font-family:'WhyteInktrap-Light';
+      font-size: 30px;
+      text-transform: uppercase;
+      color: var(--purple);
+      text-align: center;
+      margin: 0 auto;
+      
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: customticker;
+    animation-name: customticker;
+    -webkit-animation-duration: 140s;
+    animation-duration: 140s;
+  }
+
 /***************************************** COLUMN: FILTER *****************************************/
 
 .column.filter .column-content span {
@@ -2124,7 +2169,7 @@ th.headerSortDown::after {
 }
 
 .column td.hover img {
-    height: fit-content;
+    height: f;
     width: 100%;
     overflow: hidden;
 	-webkit-transition: opacity 0.6s ease-in, -webkit-filter 0.3s ease-in;
