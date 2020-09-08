@@ -3042,6 +3042,10 @@ strong {
     padding-bottom: 4px;;
 }
 
+.four-up-posters img{
+    width: calc(25% - 4px); 
+}
+
 .title {
     position: relative;
 }
