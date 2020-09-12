@@ -42,7 +42,16 @@
 	display: none;
 }
 
+/***************************************** TYPEFACE *****************************************
+@font-face {
+	font-family: "BB";
+	src: url('import/FunktionalGrotesk-Regular.eot');
+	src: url('import/FunktionalGrotesk-Regular.woff2') format('woff2'), url('import/FunktionalGrotesk-Regular.woff') format('woff'), url('import/FunktionalGrotesk-Regular.ttf.html') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
 
+*/
 
 
 
@@ -69,6 +78,12 @@
 
 
 
+.referenceicons {
+	margin-top: 0px;
+	width: 20px;
+	height: 60px;
+	display: inline-block;
+}
 
 
 
@@ -80,9 +95,40 @@ float: right;
 	left:0;
 }
 
+.text-icon {
+	position: relative;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
 
+i,
+.italic,
+.italic *,
+em {
+	font-family: "BB Italic";
+}
 
+h1 {
+	font-size: 14px;
+	line-height: 20%;
+	letter-spacing: 0px;
+	padding: 20px 0px 18px 0px;
+}
 
+h2 {
+	font-family: "BB Italic";
+	font-weight: normal;
+}
+
+hr {
+	width: 100%;
+	border: 0px;
+	height: 1px;
+	background: black;
+	margin: 10px 0px 10px 0px;
+}
 
 /***************************************** LINKS *****************************************/
 
@@ -100,9 +146,86 @@ a:hover {
 
 
 
+/***************************************** HOVER EFFECTS *****************************************/
 
+/***************************************** CUBE *****************************************/
 
+@media screen and (min-width: 1080px) {
 
+.project {
+	overflow:visible;
+	position:relative;
+	-webkit-transform-style: preserve-3d;
+  -webkit-perspective: 600px;
+	transform-style: preserve-3d;
+  perspective: 600px;
+}
+
+.project img {
+	display:block !important;
+}
+
+.project > div {
+  transition: all 800ms ease;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.project .info {
+  -webkit-transform: rotateY(90deg) translateX(100%);
+  transform: rotateY(90deg) translateX(100%);
+  width:100%;
+  height:100%;
+	background:white;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%;
+	backface-visibility: hidden;
+}
+
+.project .info h2 {
+	top:50%;
+	left:50%;
+	position:absolute;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
+	text-align:center;
+}
+
+.project .image {
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: rotateY(0deg);
+	transform-origin: 0% 0%;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+
+.project:hover {
+	z-index:1;
+}
+
+}
+
+/***************************************** FLOAT *****************************************/
+
+.float .project .image {
+	z-index: 1;
+	position: relative;
+	height: 170px;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
 /***************************************** FLIP *****************************************/
@@ -269,6 +392,132 @@ a:hover {
 	display: inline-block;
 }
 
+/***************************************** ABOUT *****************************************/
+
+.one-three {
+	width: 33.333%;
+}
+
+.about.content .column img {
+	max-width: 100%;
+}
+
+.tabs {
+	margin-bottom: 4px;
+}
+
+.tabs a {
+	color: #b7b7b7;
+	margin-right: 30px;
+	transition: color 0.15s ease-in-out;
+}
+
+.tabs a.active {
+	color: black;
+}
+
+.tabs a:hover {
+	color: black;
+}
+
+.about p {
+	padding-bottom: 22px !important;
+}
+
+.about p:last-of-type {
+	padding-bottom: 0px !important;
+}
+
+.about #map {
+	width: 100%;
+	height: 400px;
+	padding: 0px;
+	padding-top: 3px;
+	margin-bottom: 22px;
+	box-sizing: border-box;
+}
+
+.about #mapmobile {
+	width: 100%;
+	height: 200px;
+	padding: 0px;
+	padding-top: 3px;
+	margin-bottom: 22px;
+	box-sizing: border-box;
+}
+
+.download:before {
+	content: url(import/ICONS_DONE-10.svg);
+	width: 20px !important;
+	height: 20px !important;
+	display: inline-block;
+	top: 4px;
+	position: relative;
+	padding-right: 4px;
+}
+
+.imprint {
+	cursor: pointer;
+}
+
+.imprint,
+.imprint div {
+	padding: 0px !important;
+}
+
+.imprint-content {
+	display: none;
+}
+
+.imprint-content p {
+	font-family: "BB Italic" !important;
+}
+
+/***************************************** ABOUT ACCORDION *****************************************/
+
+#awards,
+#exhibitions,
+#press {
+	padding: 0px;
+}
+
+#awards .year *,
+#exhibitions .year *,
+#press .year * {
+	padding: 0px;
+}
+
+#awards .year-title,
+#exhibitions .year-title,
+#press .year-title {
+	cursor: pointer;
+}
+
+#awards .year-title:hover,
+#exhibitions .year-title:hover,
+#press .year-title:hover {
+	color: #b7b7b7;
+	transition: color 0.15s ease-in-out;
+}
+
+#awards .year,
+#exhibitions .year,
+#press .year {
+	border-bottom: 1px solid #727272;
+	padding-top: 11px;
+	padding-bottom: 9px;
+	overflow: hidden;
+	transition: 0.5s height ease-in-out;
+}
+
+.year-content {
+	display: none;
+}
+
+small {
+	width: 10px;
+	padding: 10px;
+}
 
 
 /***************************************** SLIDESHOW THUMBS *****************************************/
@@ -371,6 +620,7 @@ a:hover {
 	display: none;
 }
 
+/* SUBE */
 
 @media screen and (min-width: 1080px) {
 
@@ -439,6 +689,59 @@ a:hover {
 
 }
 
+/***************************************** SIDE MENU *****************************************/
+
+.side-menu {
+	position: fixed;
+	padding: 0px 9px 0px 9px;
+	left: 0px;
+	top: 60px;
+	z-index: 2;
+}
+
+.side-menu * {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.side-menu li {
+	overflow: visible;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.side-menu li div {
+	display: none;
+}
+
+.side-menu>li>span,
+.side-menu>li>a,
+.side-menu>li>div {
+	cursor: pointer;
+	margin-left: 12px;
+}
+
+.side-menu span:hover {
+	color: #b7b7b7;
+}
+
+.side-menu li div a {
+	font-family: "BB Italic";
+	color: black;
+}
+
+.side-menu li div a:hover {
+	font-family: "BB Italic";
+	color: #727272;
+}
+
+.side-menu .active:before {
+	content: "• ";
+	border-bottom: 0;
+	position: absolute;
+}
 
 
 /***************************************** SINGLE PROJECT FULLWIDTH *****************************************/
