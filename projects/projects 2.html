@@ -115,7 +115,12 @@
 <div class="mobilenavserif"><span>Music</span></div>
 <a href="../about.html"><div class="mobilenavsans"><span>Shop</span></div></a>
 </div>
-
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('people')"> People</button>
+  </div>
 
 <div class="grid project rating-?">
 
@@ -124,35 +129,36 @@
 
 
 <div class="workgrid-parent">
-    <div class="workgrid-div1"> 
+    <div class="workgrid-div1 column nature"> 
 		<img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/GUCCIGRIP/heroimage/GUCCI HERO IMAGE 2.jpg"  sizes="50vw">
     </div>
+  
 
-    <div class="workgrid-div2"> 
+    <div class="workgrid-div2 column people"> 
 		<img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/WATCHJOURNAL/heroimage/HEROIMAGE_WJ.png"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div3"> 
+    <div class="workgrid-div3 column nature"> 
         <img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/WOS/heroimage/WOS-HERO-IMAGE.png"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div4"> 
+    <div class="workgrid-div4 column nature"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/SPIRITUAL-SLEAZE/videos/SSleaze_IGTeaser_Quantum_1.mp4" type="video/mp4" ></video>
     </div>
 
-    <div class="workgrid-div5"> 
+    <div class="workgrid-div5 column people"> 
         <img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/7THHEAVEN/heroimage/seventhheaven_2020.gif"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div6"> 
+    <div class="workgrid-div6 column nature"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/TOMITA/Tomita_Snip3_1.mp4" type="video/mp4" ></video>
     </div>
 
-    <div class="workgrid-div7"> 
+    <div class="workgrid-div7 column people"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/FLUME/Flume ft. Toro Y Moi - The Difference (no title)_3_1.mp4" type="video/mp4" ></video>
     </div>
 
-    <div class="workgrid-div8"> 
+    <div class="workgrid-div8 column people"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/FIRME/projectpage/SewingMachineHouse_All_Small_2_3.mp4" type="video/mp4" ></video>
     </div>
 
@@ -161,32 +167,76 @@
 
     </div>
 
-    <div class="workgrid-div10"> 
+    <div class="workgrid-div10 column people"> 
         <img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/BLUDWORK/PROJECTPAGE/HERO/BLUDWORKHERO.jpg"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div11"> 
+    <div class="workgrid-div11 column people"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/UP-IN-FLAMES/projectpage/upinflames-hands_1.mp4" type="video/mp4" ></video>
     </div>
 
-    <div class="workgrid-div12"> 
+    <div class="workgrid-div12 column people"> 
 		<img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/TOOHARD/projectpage/toohardlogo.jpg"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div13"> 
+    <div class="workgrid-div13 column people"> 
 		<img class="lazyload" data-cursortext="(This is Bludwork)" src="../assets/images/thumbs/projects/SATURDAYS/heroimage/SATURDAYSHEROIMAGE.jpg"  sizes="50vw">
     </div>
 
-    <div class="workgrid-div14"> 
+    <div class="workgrid-div14 column people"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/HOMMEBOY/heroimage/HOMMEBOY_HERO_VIDEO.mp4" type="video/mp4" ></video>
     </div>
 
-    <div class="workgrid-div15"> 
+    <div class="workgrid-div15 column people"> 
         <video webkit-playsinline playsinline loop preload="none"  muted><source src="../assets/images/thumbs/projects/LEMONS/*HERO IMAGE/lemons-trimmed.mp4" type="video/mp4" ></video>
     </div>
 </div>
 </div>
-
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
 <script src="../js/jquery.js"></script>
 <script src="../js/ckin.js"></script>
 <script src="../js/flickity.pkgd.min.js"></script>
