@@ -82,35 +82,9 @@ function attachSignin(element) {
 }
 
 
-function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    var id_token = googleUser.getAuthResponse().id_token;
 
-    postData('/api/authenticate/', { token: id_token, socketID: socket.id })
-        .then(data => {
-            userProfile.innerText = `Signed in as ${profile.getName()}`;
-            me.name = profile.getName()
-            document.body.classList.add('signed-in')
-            const commentToggles = document.querySelectorAll('.toggleCommentForm')
-            commentToggles.forEach(c => {
-                c.setAttribute('data-cursorText', 'Add Response')
-            })
-        });
 
-}
 
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-        document.body.classList.remove('signed-in')
-        userProfile.innerText = ''
-        socket.emit('signout', socket.id)
-        const commentToggles = document.querySelectorAll('.toggleCommentForm')
-        commentToggles.forEach(c => {
-            c.setAttribute('data-cursorText', 'Sign in to respond')
-        })
-    });
-}
 
   function shuffle() {
     var container = document.querySelector(".work");
