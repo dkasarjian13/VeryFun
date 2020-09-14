@@ -34,8 +34,9 @@
 .veryfun, .st0 {
 	fill:#601DF8 !important;
 }
-.veryfun:hover, .st0:hover {
- 
+.veryfun:hover {
+    color:var(--gold) !important;
+    fill: var(--gold) !important;
 }
 
 
