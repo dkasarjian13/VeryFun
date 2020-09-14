@@ -35,7 +35,7 @@
 	fill:#601DF8 !important;
 }
 .veryfun:hover, .st0:hover {
-    fill: var(--gold) !important;
+ 
 }
 
 
@@ -48,8 +48,8 @@
 }
 
 #veryfun-logo:hover {
-    fill: greenyellow;
-    color: orange;
+    color:var(--gold) !important;
+    fill: var(--gold) !important;
 }
 
 .float-right-nav {
