@@ -87,6 +87,10 @@
 	color:var(--purple);
 }
 
+.header-logo:hover{
+    color:var(--highlight);
+}
+
 
 
 span e {
