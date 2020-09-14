@@ -36,7 +36,9 @@
       -webkit-animation:colorchange 10s infinite;
       animation: colorchange 10s infinite;
 }
-
+.veryfun:hover, .st0:hover {
+    fill: var(--highlight);
+}
 
 
 #veryfun-logo {
