@@ -52,6 +52,11 @@
     fill: var(--gold) !important;
 }
 
+#Layer_1 {
+    color:var(--gold) !important;
+    fill: var(--gold) !important;
+}
+
 .float-right-nav {
     padding-top: 16px;
     padding-right: 2rem;
