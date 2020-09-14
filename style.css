@@ -37,7 +37,7 @@
       animation: colorchange 10s infinite;
 }
 .veryfun:hover, .st0:hover {
-    fill: var(--highlight);
+    fill: var(--gold);
 }
 
 
@@ -47,6 +47,11 @@
     width: 17rem;
     display: block;
     margin-left: 30px;
+}
+
+#veryfun-logo:hover {
+    fill: greenyellow;
+    color: orange;
 }
 
 .float-right-nav {
