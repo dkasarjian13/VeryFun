@@ -994,9 +994,11 @@ nav.header .navigation * {
             cursor: none;
         }
 
-        .fullwidthproject{
-            display: inline;
+        .fullwidth-project{
+           height: auto;
         }
+
+     
 
           .thirdwidthproject-container{
             display: block;
@@ -1004,7 +1006,7 @@ nav.header .navigation * {
         }
         .halfwidthproject-container{
             display: block;
-            height: 48.2rem;
+            height: 47.9rem;
         }
 
         .projecttitles{
