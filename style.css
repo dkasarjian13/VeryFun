@@ -1269,8 +1269,9 @@ object-fit: cover;
 	font-size: 16px !important;
 }
 /***************************************** PROJECTS PAGE *****************************************/
-.filtercontainer{
+#filtercontainer{
     padding-top: 5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid var(--purple);
     width: 100vw;
     display: block;
@@ -1282,17 +1283,19 @@ object-fit: cover;
     width: inherit;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 3rem;
-    max-width: 48vw;
+    /*padding-bottom: 3rem;
+    max-width: 48vw;*/
 }
 
 .filtertxtsans{
     font-family: var(--sans);
     color: #601df8;
     text-align: left;
+    background: none;
     line-height: 20px;
     display: inline-block;
     font-size: 3rem;
+    border: none;
     padding-bottom: 1.5rem !important;
     letter-spacing: -3px;
 
@@ -1302,16 +1305,32 @@ object-fit: cover;
 .filtertxtserif{
     font-family: "tesseractweb-lightitalic";
     color: #601df8;
+    border: none;
+    background: none;
     text-align: left;
     line-height: 20px;
     display: inline-block;
     padding-bottom: 1.5rem !important;
     font-size: 3rem;
     letter-spacing: -3px;
-
-
-
 }
+
+.filtertxtserif:hover {
+    color: var(--gold);
+}
+
+.filtertxtserif.active {
+    color: var(--green);
+}
+
+.filtertxtsans:hover {
+    color: var(--gold);
+}
+
+.filtertxtsans.active {
+    color: var(--green);
+}
+
 
 
 
@@ -2899,10 +2918,14 @@ video {
 .layoutphotogrid img {
     width: 100%;
     height: 100%;
-   
     object-fit: cover;
     overflow: hidden;
 }
+
+.show {
+    display: block;
+    filter: blur(0px);
+  }
 
 
 /*.workgrid-div1 img,
@@ -3077,14 +3100,14 @@ video {
 
 }
 .workgrid-parent{
+    background-color: var(--purple);
 display: grid;
-padding-top: 81px;
 margin-right: -1px;
 grid-template-columns: repeat(20, 1fr);
 grid-template-rows: repeat(13, 1fr);
 grid-column-gap: 4px;
 grid-row-gap: 4px;
-height: 100vh;
+height: calc(100vh - 10em);
 
 }
 
@@ -3139,11 +3162,11 @@ grid-area: 14 / 12 / 12 / 10;
 }
 
 .workgrid-div13 {
-grid-area:1 / 9 / 4 / 5; 
+grid-area:1 / 8 / 4 / 5;
 }
 
 .workgrid-div14 {
-grid-area: 1 / 9 / 4 / 9; 
+grid-area: 1 / 8 / 4 / 10; 
 }
 
 .workgrid-div15 {
