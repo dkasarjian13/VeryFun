@@ -2591,7 +2591,7 @@ td.hover * {
 	.header.mobile {
 		display: block;
     top: 0px !important;
-    height: 3rem !important;
+    height: 55px !important;
 
 	}
 	.mobile-list {
@@ -2625,7 +2625,7 @@ td.hover * {
         height: 2.6rem;
         display: block;
         padding-top: .3rem;
-        color: var(--darktwilight);
+        color: var(--purple);
         background-color: var(--white);
         font-family: var(--sans);
         font-size:1.6rem;
