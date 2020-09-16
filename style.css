@@ -2667,8 +2667,7 @@ div.halfwidth-project.aos-init.aos-animate{
 }
 
 .halfwidthproject-container{
-    display: inline-table;
-    height: 42rem;
+    height: auto;
     width: 100%;
 }
 
