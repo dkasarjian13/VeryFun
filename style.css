@@ -2667,6 +2667,7 @@ div.halfwidth-project.aos-init.aos-animate{
 }
 
 .halfwidthproject-container{
+    display: table;
     height: auto;
     width: 100%;
 }
