@@ -1272,7 +1272,7 @@ object-fit: cover;
 #filtercontainer{
     padding-top: 5rem;
     padding-bottom: .5rem;
-    border-bottom: 1px solid var(--purple);
+    border-bottom: 3px solid var(--purple);
     width: 100vw;
     display: block;
     z-index:99;
