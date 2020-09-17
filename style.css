@@ -2625,8 +2625,8 @@ td.hover * {
         height: 2.6rem;
         display: block;
         padding-top: .3rem;
-        color: var(--purple);
-        background-color: var(--white);
+        color: #00ff00;
+        background-color: #601df8;
         font-family: var(--sans);
         font-size:1.6rem;
       
