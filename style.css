@@ -249,7 +249,7 @@ nav.header .navigation * {
         
 
         body{
-            --background:var(--ghostgray);
+            --background:var(--purple);
             --text:var(--purple);
          
             font-family:var(--sans);
@@ -1011,13 +1011,13 @@ nav.header .navigation * {
 
         .projecttitles{
             height: 2.5rem;
-            display: block;
-            padding-top: .4rem;
-            color: var(--darktwilight);
-            background-color: var(--white);
-            font-family: var(--sans);
-            font-size:2rem;
-            -webkit-font-smoothing: antialiased;
+    display: block;
+    padding-top: .4rem;
+    color: #00ff00;
+    background-color: #601df8;
+    font-family: var(--sans);
+    font-size: 2rem;
+    -webkit-font-smoothing: antialiased;
             
         }
 
@@ -1154,7 +1154,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left {
-    border-right: 5px solid #fff;
+    border-right: 5px solid var(--purple);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1165,7 +1165,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-right {
-    border-left: 5px solid #fff;
+    border-left: 5px solid var(--purple);
     flex-basis: 50%;
     display: flex;
     position: relative;
