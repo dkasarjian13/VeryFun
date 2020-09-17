@@ -249,7 +249,7 @@ nav.header .navigation * {
         
 
         body{
-            --background:var(--purple);
+            --background:#4013a4;
             --text:var(--purple);
          
             font-family:var(--sans);
@@ -1116,7 +1116,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-wj {
-    border-right: 5px solid #fff;
+    border-right: 5px solid var(--purple);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1128,7 +1128,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-7thheaven{
-    border-right: 5px solid #fff;
+    border-right: 5px solid var(--purple);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1141,7 +1141,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-toohard{
-    border-right: 5px solid #fff;
+    border-right: 5px solid var(--purple);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1176,7 +1176,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-right-saturdays {
-    border-left: 5px solid #fff;
+    border-left: 5px solid var(--purple);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1189,7 +1189,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 
 
 .flex-container-halfpage-right-painkiller {
-    border-left: 5px solid #fff;
+    border-left: 5px solid var(--purple);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1201,7 +1201,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-thirdpage-right {
-    border-left: 5px solid #fff;
+    border-left: 5px solid var(--purple);
     flex-basis: 33.33%;
     display: flex;
     position: relative;
