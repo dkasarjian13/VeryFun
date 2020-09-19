@@ -224,12 +224,12 @@ nav.header .navigation * {
     }
 
         @media (min-width:35rem){:root{--ms-0:.75rem}}
-        @media (min-width:45rem){:root{--ms-0:.9rem}}
+        @media (min-width:40rem){:root{--ms-0:.9rem}}
         @media (min-width:70rem){:root{--ms-0:1.1rem}}
         @media (min-width:95rem){:root{--ms-0:1.4rem}}
 
         @media (min-width:35rem){:root{--ms-2:.75rem}}
-        @media (min-width:45rem){:root{--ms-2:.9rem}}
+        @media (min-width:40rem){:root{--ms-2:.9rem}}
         @media (min-width:70rem){:root{--ms-2:1.9rem}}
         @media (min-width:95rem){:root{--ms-2:2rem}}
         @-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
@@ -1038,7 +1038,6 @@ nav.header .navigation * {
     font-size: 1rem;
     padding-right: 2rem;
     padding-top: 0.3rem;
-    text-transform: uppercase;
 
 }
 
@@ -1120,7 +1119,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     display: flex;
     flex-basis: 50%;
     position: relative;
-    height: 45rem;
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1132,7 +1131,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     display: flex;
     flex-basis: 50%;
     position: relative;
-    height: 45rem;
+    height: 40rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1145,7 +1144,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     display: flex;
     flex-basis: 50%;
     position: relative;
-    height: 45rem;
+    height: 40rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1158,7 +1157,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     flex-basis: 50%;
     display: flex;
     position: relative;
-   height: 45rem;
+   height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1169,7 +1168,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     flex-basis: 50%;
     display: flex;
     position: relative;
-   height: 45rem;
+   height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1180,7 +1179,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     flex-basis: 50%;
     display: flex;
     position: relative;
-   height: 45rem;
+   height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1193,7 +1192,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     flex-basis: 50%;
     display: flex;
     position: relative;
-   height: 45rem;
+   height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2500,6 +2499,14 @@ td.hover * {
     .caption.noborder {
         padding-top: 2rem;
     }
+    .flex-container-halfpage-left-wj, .flex-container-halfpage-left, .flex-container-halfpage-right-painkiller, .flex-container-halfpage-right, .flex-container-halfpage-left-7thheaven, .flex-container-halfpage-left-toohard, .flex-container-halfpage-right-saturdays{
+        height: 30rem;
+    }
+    .halfwidthproject-container{
+        display: flex;
+        height: auto;
+    }
+
 
     
 
