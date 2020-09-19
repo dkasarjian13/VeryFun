@@ -249,7 +249,7 @@ nav.header .navigation * {
         
 
         body{
-            --background:#4013a4;
+            --background: var(--white);
             --text:var(--purple);
          
             font-family:var(--sans);
@@ -1005,16 +1005,16 @@ nav.header .navigation * {
        
         }
         .halfwidthproject-container{
-            display: block;
-            height: 47.9rem;
+            display: flex;
+            height: auto;
         }
 
         .projecttitles{
             height: 2.5rem;
     display: block;
     padding-top: .4rem;
-    color: #00ff00;
-    background-color: #601df8;
+    color: var(--purple);
+    background-color:var(--white);
     font-family: var(--sans);
     font-size: 2rem;
     -webkit-font-smoothing: antialiased;
@@ -1115,7 +1115,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-wj {
-    border-right: 5px solid var(--purple);
+    border-right: 5px solid var(--white);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1127,7 +1127,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-7thheaven{
-    border-right: 5px solid var(--purple);
+    border-right: 5px solid var(--white);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1140,7 +1140,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left-toohard{
-    border-right: 5px solid var(--purple);
+    border-right: 5px solid var(--white);
     display: flex;
     flex-basis: 50%;
     position: relative;
@@ -1153,7 +1153,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-left {
-    border-right: 5px solid var(--purple);
+    border-right: 5px solid var(--white);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1164,7 +1164,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-right {
-    border-left: 5px solid var(--purple);
+    border-left: 5px solid var(--white);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1175,7 +1175,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-halfpage-right-saturdays {
-    border-left: 5px solid var(--purple);
+    border-left: 5px solid var(--white);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1188,7 +1188,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 
 
 .flex-container-halfpage-right-painkiller {
-    border-left: 5px solid var(--purple);
+    border-left: 5px solid var(--white);
     flex-basis: 50%;
     display: flex;
     position: relative;
@@ -1200,7 +1200,7 @@ div.thirdwidth-project.aos-init.aos-animate{
 }
 
 .flex-container-thirdpage-right {
-    border-left: 5px solid var(--purple);
+    border-left: 5px solid var(--white);
     flex-basis: 33.33%;
     display: flex;
     position: relative;
@@ -2632,7 +2632,7 @@ td.hover * {
         height: 2.6rem;
         display: block;
         padding-top: .3rem;
-        color: #00ff00;
+        color: var(--purple);
         background-color: #601df8;
         font-family: var(--sans);
         font-size:1.6rem;
