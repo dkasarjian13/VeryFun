@@ -52,6 +52,45 @@
     margin-left: 30px;
 }
 
+.veryfun-logo-intro {
+    margin: 0;
+    max-width: 56ch;
+    position: absolute;
+    top: 50%;
+    -webkit-animation: logointro 4s ease-in-out infinite;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 85vw !important;
+    text-align: left;
+    font-size: var(--ms-3)!important;
+    /* letter-spacing: -.03em; */
+    -webkit-font-smoothing: antialiased;
+    line-height: .96;
+}
+
+@keyframes logointro {
+
+    0%{
+        filter: blur(0px);
+    }
+
+
+    50%{
+        filter: blur(10px);
+        rotate: 90;
+    }
+
+    100%{
+        filter: blur(0px);
+    }
+
+}
+
+.veryfun-logo-intro .logotest{
+    fill: var(--green);
+}
+
 
 .float-right-nav {
     padding-top: 16px;
@@ -400,6 +439,7 @@ nav.header .navigation * {
             height: 96vh;
             width: auto;
             position: relative;
+            background-color: var(--purple);
         }
         
         .works{
