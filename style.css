@@ -1478,13 +1478,14 @@ object-fit: cover;
 }
 
 .slideshow h1 {
-    padding: 0px 0px 18px 18px;
+    padding: 0px 0px 16px 18px;
     font-family: "WhyteInktrap-Light";
     /* text-transform: uppercase; */
     text-align: left;
     color: #601df8;
     letter-spacing: -.05em;
-    font-size: 40px;
+    font-size: 35px;
+
 }
 
 .slideshow h1 section-title-right{
