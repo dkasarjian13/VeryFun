@@ -23801,7 +23801,7 @@
     ;
     window.addEventListener("resize", D),
     document.body.classList.add("loading"),
-    (a = new THREE.Scene).background = new THREE.Color(2965752),
+    (a = new THREE.Scene).background = new THREE.Color('#7ffe00'),
     o = new THREE.WebGLRenderer,
     document.getElementById("content").appendChild(o.domElement),
     c = new THREE.Clock,
