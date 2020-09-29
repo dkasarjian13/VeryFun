@@ -7,9 +7,9 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.join(__dirname, 'projects'),
+        path: path.join(__dirname, '/projects/visualizer'),
     },
     devServer: {
-        contentBase: path.join(__dirname, 'projects')
+        contentBase: path.join(__dirname, '/projects/visualizer')
     }
 };
