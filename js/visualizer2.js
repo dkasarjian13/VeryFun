@@ -23684,7 +23684,7 @@
       , A = ()=>{
         const t = new THREE.AudioListener;
         x = new THREE.Audio(t),
-        (new THREE.AudioLoader).load("asset/brooklyn.mp3", t=>{
+        (new THREE.AudioLoader).load("/assets/brooklyn.mp3", t=>{
             document.body.classList.remove("loading"),
             x.setBuffer(t),
             x.setLoop(!0),
