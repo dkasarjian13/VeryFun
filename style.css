@@ -2673,7 +2673,7 @@ td.hover * {
         display: block;
         padding-top: .3rem;
         color: var(--purple);
-        background-color: #601df8;
+        background-color:#fbfbfb;
         font-family: var(--sans);
         font-size:1.6rem;
       
@@ -3418,12 +3418,26 @@ grid-area: 14 / 1 / 4 / 10;
     }
     .creditcaps {
         font-size: 1rem;
-        display: inline-block;
-        padding-left: 0.5rem;
-        width: 49%;
-        border-top: 1px solid white;
-        text-align: left;
-        padding-bottom: .5rem;
+    display: list-item;
+    padding-left: 0.8rem;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: left;
+    padding-bottom: .5rem;
+    }
+    .title.padding.big h1 {
+        font-family: "tesseractweb-lightitalic" !important;
+        font-size: 3rem;
+        padding-left: .8rem;
+        letter-spacing: -.2rem;
+    }
+
+    .title.big p, .title.big p * {
+        font-size: 16px;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        line-height: 130%;
+        padding-bottom: 1rem;
     }
 
     .title .bottom {
