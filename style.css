@@ -1056,7 +1056,7 @@ nav.header .navigation * {
     color: var(--purple);
     background-color:var(--white);
     font-family: var(--sans);
-    font-size: 2rem;
+    font-size: 1.75rem;
     -webkit-font-smoothing: antialiased;
             
         }
@@ -1072,12 +1072,13 @@ nav.header .navigation * {
 .projecttitle-left span{
     font-family: "tesseractweb-lightitalic";
     -webkit-font-smoothing: antialiased;
+font-size:  1.8rem !important;
 }
 .projecttitle-tags{
     float: right;
     font-size: 1rem;
     padding-right: 2rem;
-    padding-top: 0.3rem;
+    padding-top: 0.22rem;
 
 }
 
@@ -1855,7 +1856,7 @@ letter-spacing: -4px;
 /***************************************** SINGLE PROJECT SLIDESHOW *****************************************/
 
 .carousel {
-	max-height: 80vh;
+	max-height: 70vh;
 	position: relative;
 }
 
@@ -2673,7 +2674,7 @@ td.hover * {
         display: block;
         padding-top: .3rem;
         color: var(--purple);
-        background-color: #601df8;
+        background-color:#fbfbfb;
         font-family: var(--sans);
         font-size:1.6rem;
       
@@ -2685,7 +2686,7 @@ td.hover * {
         float: left;
         letter-spacing:.0em;
         display: block;
-        margin-top: -0.3em !important;
+        margin-top: -0.24em !important;
         padding-left: .5rem;
         width:100%;
 }
@@ -3333,8 +3334,8 @@ grid-area: 14 / 1 / 4 / 10;
 
 .creditcaps{
     font-size: 1rem;
-    display: inline-block;
-    padding-left: 0.5rem;
+    display: inline-grid;
+        padding-left: 0.5rem;
     width: 32%;
     border-top: 1px solid white;
     text-align: left;
@@ -3418,13 +3419,44 @@ grid-area: 14 / 1 / 4 / 10;
     }
     .creditcaps {
         font-size: 1rem;
-        display: inline-block;
-        padding-left: 0.5rem;
-        width: 49%;
-        border-top: 1px solid white;
-        text-align: left;
-        padding-bottom: .5rem;
+    display: list-item;
+    padding-left: 0.8rem;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: left;
+    padding-bottom: .5rem;
     }
+    .title.padding.big h1 {
+        font-family: "tesseractweb-lightitalic" !important;
+        font-size: 3rem;
+        padding-left: .8rem;
+        letter-spacing: -.2rem;
+    }
+
+    .title.big p, .title.big p * {
+        font-size: 16px;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        line-height: 130%;
+        padding-bottom: 1rem;
+    }
+.icon {
+    max-width: 48px !important;
+    max-height: 86px !important;
+    margin-left: -17px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.icon2{
+    height: 70px !important;
+    margin-right: 2px;
+    margin-top: -29px !important;
+    width: auto !important;
+    display: inline-block;
+}
+ 
 
     .title .bottom {
         position: relative;
