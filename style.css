@@ -2671,13 +2671,14 @@ td.hover * {
     
     .projecttitles{
         height: 2.6rem;
+        width: 100%;
         display: block;
+        overflow: hidden;
         padding-top: .3rem;
         color: var(--purple);
-        background-color:#fbfbfb;
+        background-color: #fbfbfb;
         font-family: var(--sans);
-        font-size:1.6rem;
-      
+        font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
         
     }
@@ -3388,6 +3389,46 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 @media screen and (max-width: 800px){
+
+    .four-up-posters img {
+        width: calc(50% - 3px);
+        padding-left: 2px;
+        display: inline;
+    }
+
+    #intro{
+        display: inline-table;
+    }
+
+    #tickerwrap {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        border-radius: 1rem 1rem 0 0;
+        backdrop-filter: blur(48px);
+        color: #ff0303;
+        background-color: lime;
+    }
+
+    #ticker {
+        display: inline-block;
+        white-space: nowrap;
+        font-family: 'WhyteInktrap-Light';
+        /* font-size: 18px; */
+        text-transform: uppercase;
+        color: var(--purple);
+        text-align: center;
+        margin: 0 auto;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: customticker;
+        animation-name: customticker;
+        -webkit-animation-duration: 140s;
+        animation-duration: 140s;
+    }
 
     .section#header img, .section#header video {
         height: 45vh;
