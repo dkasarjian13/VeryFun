@@ -2680,7 +2680,7 @@ td.hover * {
         margin-right: .5rem;
         padding-top: 0.3rem;
         color: var(--purple);
-        background-color: var(--green));
+        background-color: var(--green);
         border-radius: 3rem 3rem 0 0;
         font-family: var(--sans);
         font-size: 1.6rem;
