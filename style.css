@@ -2711,6 +2711,10 @@ td.hover * {
 }
 .heroimage-fullwidth, .heroimage-fullwidth-noscento, .heroimage-fullwidth-wos {
     height: 43vh;
+margin-left: .5rem;
+margin-right: .5rem;
+width: initial;
+border-radius: 0rem 0rem 5rem 5rem;
 }
 
 
