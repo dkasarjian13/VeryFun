@@ -2670,13 +2670,18 @@ td.hover * {
 
     
     .projecttitles{
-        height: 2.6rem;
+        height: 2rem;
         width: 100%;
         display: block;
         overflow: hidden;
-        padding-top: .3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        padding-top: 0.3rem;
         color: var(--purple);
-        background-color: #fbfbfb;
+        background-color: var(--green));
+        border-radius: 3rem 3rem 0 0;
         font-family: var(--sans);
         font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
@@ -2685,11 +2690,12 @@ td.hover * {
 
     .projecttitle-left {
         float: left;
-        letter-spacing:.0em;
+        letter-spacing: .0em;
         display: block;
-        margin-top: -0.24em !important;
-        padding-left: .5rem;
-        width:100%;
+        letter-spacing: -.1rem;
+        margin-top: -0.34em !important;
+        padding-left: -0.5rem;
+        width: 100%;
 }
 
 .projecttitle-tags {
@@ -2697,7 +2703,7 @@ td.hover * {
     float: left;
 
     margin-top: -.6rem;
-    display: block;
+    display: none;
 
     padding-left: .5rem;
     padding-top: 0.0rem;
@@ -2731,12 +2737,16 @@ div.halfwidth-project.aos-init.aos-animate{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    border-radius: 0 0 3rem 3rem;
 }
 
 .flex-container-halfpage-left{
     border-right: none;
     border-left: none;
     flex-basis: none;
+    border-radius: 0 0 3rem 3rem;
+    margin-left: .5rem;
+margin-right: .5rem;
     position: none;
     height: 43vh;
     padding: 0px 0px;
@@ -2750,6 +2760,7 @@ div.halfwidth-project.aos-init.aos-animate{
     border-right: none;
     border-left: none;
     flex-basis: none;
+    border-radius: 0 0 3rem 3rem;
     position: none;
     height: 35vh;
     margin-left: .5rem;
@@ -2765,6 +2776,7 @@ margin-right: .5rem;
     border-left: none;
     flex-basis: none;
     position: none;
+    border-radius: 0 0 3rem 3rem;
     height: 35vh;
     margin-left: .5rem;
 margin-right: .5rem;
@@ -2778,8 +2790,11 @@ margin-right: .5rem;
     border-right: none;
     border-left: none;
     flex-basis: none;
+    border-radius: 0 0 3rem 3rem;
     position: none;
     height: 43vh;
+    margin-left: .5rem;
+    margin-right: .5rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2791,7 +2806,10 @@ margin-right: .5rem;
     /* display: flex; */
     flex-basis: none;
     position: none;
-    height: 43vh;
+    height: 35vh;
+    border-radius: 0 0 3rem 3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
