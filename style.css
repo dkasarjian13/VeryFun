@@ -2671,11 +2671,11 @@ td.hover * {
     
     .projecttitles{
         height: 2rem;
-        width: 100%;
+     
         display: block;
         overflow: hidden;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+      
         margin-left: .5rem;
         margin-right: .5rem;
         padding-top: 0.3rem;
@@ -2737,14 +2737,14 @@ div.halfwidth-project.aos-init.aos-animate{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
 }
 
 .flex-container-halfpage-left{
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
     margin-left: .5rem;
 margin-right: .5rem;
     position: none;
@@ -2760,7 +2760,7 @@ margin-right: .5rem;
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
     position: none;
     height: 35vh;
     margin-left: .5rem;
@@ -2776,7 +2776,7 @@ margin-right: .5rem;
     border-left: none;
     flex-basis: none;
     position: none;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
     height: 35vh;
     margin-left: .5rem;
 margin-right: .5rem;
@@ -2790,7 +2790,7 @@ margin-right: .5rem;
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
     position: none;
     height: 43vh;
     margin-left: .5rem;
@@ -2807,7 +2807,7 @@ margin-right: .5rem;
     flex-basis: none;
     position: none;
     height: 35vh;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 0rem 0rem 5rem 5rem;
     margin-left: .5rem;
     margin-right: .5rem;
     padding: 0px 0px;
