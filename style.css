@@ -2725,8 +2725,9 @@ div.halfwidth-project.aos-init.aos-animate{
     border-right: none;
     flex-basis: none;
     position: none;
-    height: 43vh;
-    padding: 0px 0px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 53vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2750,14 +2751,30 @@ div.halfwidth-project.aos-init.aos-animate{
     border-left: none;
     flex-basis: none;
     position: none;
-    height: 43vh;
+    height: 35vh;
+    margin-left: .5rem;
+margin-right: .5rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.flex-container-halfpage-right-saturdays,.flex-container-halfpage-right-painkiller{
+.flex-container-halfpage-right-saturdays{
+    border-right: none;
+    border-left: none;
+    flex-basis: none;
+    position: none;
+    height: 35vh;
+    margin-left: .5rem;
+margin-right: .5rem;
+    padding: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.flex-container-halfpage-right-painkiller{
     border-right: none;
     border-left: none;
     flex-basis: none;
@@ -3415,7 +3432,7 @@ grid-area: 14 / 1 / 4 / 10;
         display: inline-block;
         white-space: nowrap;
         font-family: 'WhyteInktrap-Light';
-        /* font-size: 18px; */
+        font-size: 18px; 
         text-transform: uppercase;
         color: var(--purple);
         text-align: center;
