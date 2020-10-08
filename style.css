@@ -237,7 +237,6 @@ nav.header .navigation * {
         --highlight:#00ff00;
         --black:black;
         --border-radius:6px;
-        --background: ;
         --black-hover:rgb(90, 90, 90);
         --lightgray:#fbfbfb;
         --ghostgray:#F2F2F4;
@@ -286,33 +285,15 @@ nav.header .navigation * {
         :focus{
             outline:0
         }
-        @-webkit-keyframes slide {
-            from{
-                background-position:0px;
-            }
-            to{
-                background-position:800px;
-            }
-        }
+        
 
         body{
-            
+            --background: var(--white);
             --text:var(--purple);
          
             font-family:var(--sans);
             display:grid;
-            background: -moz-linear-gradient(left,  #ff3232 0%, #ff7830 33%, #f900e9 66%, #ff3232 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff3232), color-stop(33%,#ff7830), color-stop(66%,#f900e9), color-stop(100%,#ff3232)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(left,  #ff3232 0%,#ff7830 33%,#f900e9 66%,#ff3232 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(left,  #ff3232 0%,#ff7830 33%,#f900e9 66%,#ff3232 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(left,  #ff3232 0%,#ff7830 33%,#f900e9 66%,#ff3232 100%); /* IE10+ */
-            background: linear-gradient(to right,  #ff3232 0%,#ff7830 33%,#f900e9 66%,#ff3232 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ff3232',GradientType=1 ); /* IE6-9 */
-            
-            -webkit-animation: slide 5s linear infinite;
-            -moz-animation: slide 5s linear infinite;
-            -o-animation: slide 5s linear infinite;
-          
+            background:var(--background);
             color:var(--text);
             cursor:none;
             overflow-x: hidden;
