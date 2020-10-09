@@ -1986,12 +1986,14 @@ letter-spacing: -4px;
 
 
 #tickerwrap {
-    width: 100%;
-  position: fixed;
-  bottom:0;
+ width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid var(--purple);
+    border-bottom: 2px solid var(--purple);
     overflow: hidden;
-  backdrop-filter: blur(4px);
-    color: #fff;
+    /* background: white; */
+    backdrop-filter: blur(25px);
   }
   
 
@@ -3443,14 +3445,14 @@ grid-area: 14 / 1 / 4 / 10;
     }
 
     #tickerwrap {
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        overflow: hidden;
-        border-radius: 1rem 1rem 0 0;
-        backdrop-filter: blur(48px);
-        color: #ff0303;
-        background-color: lime;
+width: 100%;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    /* border-radius: 1rem 1rem 0 0; */
+    backdrop-filter: blur(48px);
+    color: #ff0303;
+ 
     }
 
     #ticker {
