@@ -45,11 +45,10 @@
 
 
 .veryfun-logo {
-    padding-top: 8px;
-    float: left;
+    padding-top: 5px;
     width: 17rem;
     display: block;
-    margin-left: 30px;
+    margin: 0 auto;
 }
 
 .veryfun-logo-intro {
@@ -192,11 +191,11 @@ nav.header {
 }
 
 nav.header.nav-up {
-    top: -4rem;
+    top: -5.55rem;
 }
 
 nav.header * {
-    line-height: 2.6rem;
+    line-height: 4rem;
 }
 
 nav.header .logo,
