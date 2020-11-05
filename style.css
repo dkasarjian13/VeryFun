@@ -2934,7 +2934,7 @@ video {
     padding-right: 4px !important;
 }
 
-
+.layouttwo,
 .layout2,
 .layout3,
 .layout4,
@@ -2944,7 +2944,7 @@ video {
     /*float: left;*/
   
 }
-
+.layouttwo>div,
 .layout1>div,
 .layout2>div,
 .layout3>div,
@@ -2963,6 +2963,8 @@ video {
 
 .layout2 img,
 .layout2 video,
+.layouttwo img,
+.layouttwo video,
 .layout3 img,
 .layout3 video,
 .layout4 img,
@@ -3153,6 +3155,8 @@ video {
 
     box-sizing: border-box;
 }
+
+.layouttwo>div,
 .layout2>div {
     width: calc(50% - 0px);
     height: 36.125vw;
@@ -3161,14 +3165,20 @@ video {
     box-sizing: border-box;
 }
 
+.layouttwo>div,
 .layout2>div:first-of-type{
     padding-right: 2px;
     padding-bottom: 4px;
 }
 
-.layout2>div:last-of-type{
+.layouttwo>div:last-of-type{
     padding-left: 2px;
     padding-bottom: 4px;
+}
+
+.layout2>div:last-of-type{
+    padding-left: 0px;
+    padding-bottom: 0px;
 }
 
 .layout3>div:first-of-type,
@@ -3350,6 +3360,7 @@ grid-area: 14 / 1 / 4 / 10;
     padding-bottom: 4px;;
 }
 .four-up-posters{
+    margin-top: 4px;
     margin-bottom: -4px;
 }
 
@@ -3412,6 +3423,7 @@ grid-area: 14 / 1 / 4 / 10;
         padding-left: 0rem;
     }
     .layout1>div,
+    .layouttwo>div,
     .layout2>div,
     .layout3>div,
     .layout4>div,
