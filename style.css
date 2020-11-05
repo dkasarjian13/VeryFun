@@ -45,7 +45,7 @@
 
 
 .veryfun-logo {
-    padding-top: 5px;
+    padding-top: 6px;
     width: 17rem;
     display: block;
     margin: 0 auto;
@@ -187,15 +187,15 @@ nav.header {
 	background: white;
 	top: 0;
 	transition: top 0.2s ease-in-out;
-	height: 5rem;
+	height: 6.5rem;
 }
 
 nav.header.nav-up {
-    top: -5.55rem;
+    top: -5.75rem;
 }
 
 nav.header * {
-    line-height: 4rem;
+    line-height: 4.5rem;
 }
 
 nav.header .logo,
