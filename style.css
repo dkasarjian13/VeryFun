@@ -2495,9 +2495,6 @@ td.hover * {
         width: 90vw;
     }
 
-    .cursor-container{
-        display: none;
-    }
     .icons {
 
         width: 2rem;
@@ -2596,6 +2593,7 @@ td.hover * {
 	border-bottom: 0px solid black;
 	width: 100%;
 }
+
 
 .mobile-navigation span {
     top: 50%;
@@ -3450,6 +3448,10 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 @media screen and (max-width: 800px){
+
+    .cursor-container{
+        display: none ;
+    }
 
     .four-up-posters img {
         width: calc(50% - 3px);
