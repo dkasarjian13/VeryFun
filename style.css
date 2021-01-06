@@ -235,6 +235,7 @@ nav.header .navigation * {
         --sans:"WhyteInktrap-Light";
         --highlight:#00ff00;
         --black:black;
+        --spaceblack:#3F4364;
         --border-radius:6px;
         --black-hover:rgb(90, 90, 90);
         --lightgray:#fbfbfb;
@@ -244,6 +245,7 @@ nav.header .navigation * {
         --twilightgrey:#a7a7a7;
         --darktwilight:#838383;
         --green:#7FFE00;
+        --seriousgray:#EFF0F4;
         --white:white;
         --purple:#601df8;
         --midnight:#212121;
@@ -1035,6 +1037,9 @@ nav.header .navigation * {
 
         .fullwidth-project{
            height: auto;
+        }
+        .hw-bg-color {
+            display: contents;
         }
 
      
@@ -2675,22 +2680,17 @@ td.hover * {
 
     
     .projecttitles{
-        height: 2rem;
-     
+        height: 4rem;
         display: block;
         overflow: hidden;
-        margin-top: 1rem;
-      
         margin-left: .5rem;
         margin-right: .5rem;
-        padding-top: 0.3rem;
-        color: var(--purple);
-        background-color: var(--green);
-        border-radius: 3rem 3rem 0 0;
+        padding-top: 0.6rem;
+        color: var(--spaceblack);
+        background-color: var(--seriousgray);
         font-family: var(--sans);
         font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
-        
     }
 
     .projecttitle-left {
@@ -2699,34 +2699,50 @@ td.hover * {
         display: block;
         letter-spacing: -.1rem;
         margin-top: -0.34em !important;
-        padding-left: -0.5rem;
+        padding-left: unset !important;
         width: 100%;
 }
 
 .projecttitle-tags {
-    font-size: 10px;
+    font-size: 16px;
     float: left;
-
-    margin-top: -.6rem;
-    display: none;
-
-    padding-left: .5rem;
+    line-height: .9rem;
+    letter-spacing: -.06rem;
+    margin-top: -0.3rem;
     padding-top: 0.0rem;
-    text-transform: uppercase;
 }
+
+.projecttitle-left span {
+    font-family: "WhyteInktrap-Light";
+    font-size: 1.6rem !important;
+
+}
+
+
+
+.fullwidth-project {
+    height: auto;
+    padding-bottom: .6rem;
+    background: var(--seriousgray);
+}
+
 .heroimage-fullwidth, .heroimage-fullwidth-noscento, .heroimage-fullwidth-wos {
     height: 43vh;
 margin-left: .5rem;
 margin-right: .5rem;
 width: initial;
-border-radius: 0rem 0rem 5rem 5rem;
 }
 
-
+.hw-bg-color{
+background: var(--seriousgray);
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-bottom: .6rem;
+}
 
 div.halfwidth-project.aos-init.aos-animate{
     width: 100%;
-   
     display: table;
 }
 
@@ -2746,16 +2762,12 @@ div.halfwidth-project.aos-init.aos-animate{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 0rem 0rem 5rem 5rem;
 }
 
 .flex-container-halfpage-left{
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0rem 0rem 5rem 5rem;
-    margin-left: .5rem;
-margin-right: .5rem;
     position: none;
     height: 43vh;
     padding: 0px 0px;
@@ -2769,11 +2781,8 @@ margin-right: .5rem;
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0rem 0rem 5rem 5rem;
     position: none;
     height: 35vh;
-    margin-left: .5rem;
-margin-right: .5rem;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2785,7 +2794,6 @@ margin-right: .5rem;
     border-left: none;
     flex-basis: none;
     position: none;
-    border-radius: 0rem 0rem 5rem 5rem;
     height: 35vh;
     margin-left: .5rem;
 margin-right: .5rem;
@@ -2799,7 +2807,6 @@ margin-right: .5rem;
     border-right: none;
     border-left: none;
     flex-basis: none;
-    border-radius: 0rem 0rem 5rem 5rem;
     position: none;
     height: 43vh;
     margin-left: .5rem;
@@ -2816,7 +2823,6 @@ margin-right: .5rem;
     flex-basis: none;
     position: none;
     height: 35vh;
-    border-radius: 0rem 0rem 5rem 5rem;
     margin-left: .5rem;
     margin-right: .5rem;
     padding: 0px 0px;
@@ -2830,6 +2836,8 @@ margin-right: .5rem;
 }
 video{
     height: 43vh;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
 }
 
 div.thirdwidth-project.aos-init.aos-animate{
@@ -2846,9 +2854,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     background-repeat: no-repeat;
     background-position: center center;
 }
-video {
-    border-radius: 0rem 0rem 5rem 2rem;
-}
+
 }
 
 
