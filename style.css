@@ -34,6 +34,59 @@
 .veryfun{
 
 }
+
+.logo-anim-hp-ct{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo-anim-hp {
+    z-index: 99999;
+    fill: var(--purple);
+          position: fixed;
+      pointer-events: none;
+      top: 50%;
+      width: 100%;
+      -webkit-transform: translate3d(0,-50%,0);
+      -moz-transform: translate3d(0,-50%,0);
+      -ms-transform: translate3d(0,-50%,0);
+      transform: translate3d(0,-50%,0);
+  
+  
+  }
+  .logo-anim-sub {
+      opacity: 0;
+      display: none;
+      width: 95%;
+      margin: 0 auto 1rem auto;
+      -webkit-transform-origin: 50% 0;
+      -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      transition: opacity .1s ease .1s;
+         mix-blend-mode: multiply;
+         display: inline-block;
+  }
+  
+  .socialsvg-sub{
+    fill: var(--navgrey);
+    transition:  0.15s ease-in-out;
+}
+
+  .twittersvg-sub-rect{
+      fill:none;
+}
+
+  .socialsvg-sub:hover{
+    fill: var(--purple);  
+}
+
+
 .logotest{
     fill: var(--purple);
     transition:  0.15s ease-in-out;
@@ -49,6 +102,18 @@
     width: 17rem;
     display: block;
     margin: 0 auto;
+}
+
+.twittersvg {
+    width: 4rem;
+    display: inline-block;
+}
+
+.instagramsvg {
+    width: 2.4rem;
+    top: -11px;
+    position: relative;
+    display: inline-block;
 }
 
 .veryfun-logo-intro {
@@ -90,9 +155,41 @@
     fill: var(--green);
 }
 
+.navbar-intro{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+div.navbar-intro a.header-work, div.navbar-intro a.header-studio {
+   color: var(--ghostgray);
+    transition:  0.15s ease-in-out;
+}
+
+div.navbar-intro svg.socialsvg-sub{
+    fill: var(--ghostgray);
+}
+
+
+div.navbar-intro a.header-work:hover, div.navbar-intro a.header-studio:hover {
+    color: var(--purple);
+     transition:  0.15s ease-in-out;
+ }
+
+ div.navbar-intro svg.socialsvg-sub:hover{
+    fill: var(--purple);
+}
+
+
+.float-left-nav {
+    float:left;
+   padding-top: 1.2rem;
+    padding-left: 1.4rem;
+}
+
 
 .float-right-nav {
-    padding-top: 16px;
+    padding-top: 1.2rem;
     padding-right: 2rem;
 }
 a {
@@ -188,6 +285,29 @@ nav.header {
 	top: 0;
 	transition: top 0.2s ease-in-out;
 	height: 6.5rem;
+}
+
+nav.header-hp {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+	background: white;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+    height: 6.5rem;
+    width: 100%;
+}
+
+
+.show{
+    opacity: 1;
+}
+.hide{
+  opacity: 0;
+}
+
+nav.header-hp.nav-up {
+    top: -5.75rem;
 }
 
 nav.header.nav-up {
@@ -437,7 +557,6 @@ nav.header .navigation * {
         }
 
         .container{
-            height: 96vh;
             width: auto;
             position: relative;
             background-color: var(--purple);
