@@ -2683,6 +2683,19 @@ td.hover * {
 
 @media screen and (max-width: 1023px){
 
+.header-play, .header-studio, .header-music, .header-shop, .header-work {
+    font-size: 2rem;
+}
+
+.instagramsvg {
+    width: 2rem;
+}
+
+.twittersvg {
+    width: 3.5rem;
+}
+
+
 
 .mobile-navigation {
 	z-index: 5;
@@ -2777,9 +2790,32 @@ td.hover * {
 
     
     .container{
-        height: 93.2vh;
+        height: 100vh;
         width: auto;
         position: relative;
+    }
+
+    .veryfun-logo{
+        padding-top: 1.2rem;
+        width: 12rem;
+        padding-left: 1.8rem;
+        display: inline-block;
+    }
+
+    .logotest{
+        fill: var(--green);
+    }
+
+
+    .float-right-nav {
+        padding-top: 1.9rem;
+        padding-right: .5rem;
+    }
+
+
+    .float-left-nav {
+        padding-top: 1.6rem;
+        padding-left: .5rem;
     }
     
     .works{
@@ -2953,6 +2989,17 @@ margin-right: .5rem;
 .bg-video{
     height: 43vh;
 }
+
+.largecontainer video{
+    height: -webkit-fill-available;
+    padding-left: 0!important ;
+    padding-right: 0 !important;
+}
+
+.logo-anim-hp-ct{
+    display: none;
+}
+
 video{
     height: 43vh;
     padding-left: .5rem !important;
