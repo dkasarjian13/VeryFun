@@ -156,9 +156,10 @@
 }
 
 .navbar-intro{
-    position: absolute;
     z-index: 99;
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 div.navbar-intro a.header-work, div.navbar-intro a.header-studio {
@@ -288,8 +289,7 @@ nav.header {
 }
 
 nav.header-hp {
-    position: -webkit-sticky;
-    position: sticky;
+   position:fixed;
     z-index: 100;
 	background: white;
 	top: 0;
@@ -556,10 +556,15 @@ nav.header .navigation * {
             pointer-events:all
         }
 
+        .largecontainer{
+            height: 100vh;
+            position: sticky;
+        }
+
         .container{
             width: auto;
-            position: relative;
-            background-color: var(--purple);
+            position: absolute;
+          
         }
         
         .works{
@@ -1152,6 +1157,11 @@ nav.header .navigation * {
         .homepageprojects {
             width: 100vw;
             cursor: none;
+            position: relative;
+        }
+
+        main.largecontainer video {
+            height: -webkit-fill-available;
         }
 
         .fullwidth-project{
@@ -2792,7 +2802,7 @@ td.hover * {
     .container{
         height: 100vh;
         width: auto;
-        position: relative;
+        position: absolute;
     }
 
     .veryfun-logo{
