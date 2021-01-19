@@ -27,6 +27,77 @@
 
 
 
+.homepagefooter{
+    margin-top: .8rem;
+    overflow: hidden;
+    width: 100vw;
+    background-color: var(--footer);
+    transition:  0.15s ease-in-out;
+}
+
+.copyright{
+    float: right;
+    font-size: 12px;
+    font-family: 'WhyteInktrap-Light';
+    letter-spacing: 0;
+    margin-right: 2.4rem;
+    margin-top: -1.2rem;
+    transition:  0.15s ease-in-out;
+}
+
+
+
+
+
+.homepagefootertext{
+    font-size: 8rem;
+    letter-spacing: -.11em;
+    color: var(--seriousgray);
+    font-family: "WhyteInktrap-Light";
+    padding-left: 2.4rem;
+    padding-top: 2rem;
+    transition:  0.15s ease-in-out;
+}
+
+.homepagefooter span{
+    font-family: "tesseractweb-lightitalic";
+    margin-left: -1rem;
+    text-transform: none;
+    font-weight: normal;
+    transition:  0.15s ease-in-out;
+}
+
+.homepagefooter span b{
+    font-family: "WhyteInktrap-Light";
+    font-size: 17rem;
+    line-height: 7rem;
+    letter-spacing: -2.0rem;
+    margin-left: -.6rem;
+    -webkit-text-stroke: 1px var(--seriousgray);
+    -webkit-text-fill-color: var(--footer);
+    transition:  0.15s ease-in-out;
+    
+
+}
+
+
+.homepagefooter .twittersvg .instagramsvg{
+    display: block;
+}
+
+.homepagefooter span b:hover{
+    font-family: "WhyteInktrap-Light";
+    -webkit-text-stroke: 1px var(--seriousgray);
+    -webkit-text-fill-color: var(--seriousgray);
+}
+
+.footersocials{
+    margin-left: 2rem;
+    margin-top: -3rem;
+    padding-bottom: 2.4rem;
+}
+
+
 
 /***************************************** NAVI HEADER *****************************************/
 
@@ -366,6 +437,7 @@ nav.header .navigation * {
         --twilightgrey:#a7a7a7;
         --darktwilight:#838383;
         --green:#7FFE00;
+        --footer:#6d7e8e;
         --seriousgray:#EFF0F4;
         --white:white;
         --purple:#601df8;
@@ -1780,7 +1852,7 @@ letter-spacing: -4px;
 }
 
 #intro {
-    margin-bottom: -4px;
+    margin-bottom: -0.2rem;
     display: inline-block;
     padding-left: 0px;
     padding-right: 0px;
@@ -2814,13 +2886,13 @@ td.hover * {
     }
 
     .logotest{
-        fill: var(--green);
+        fill: var(--purple);
     }
 
 
     .float-right-nav {
         padding-top: 1.9rem;
-        padding-right: .5rem;
+        padding-right: 1rem;
     }
 
 
@@ -3008,7 +3080,6 @@ margin-right: .5rem;
 }
 
 .logo-anim-hp-ct{
-    display: none;
 }
 
 video{
@@ -3634,6 +3705,10 @@ grid-area: 14 / 1 / 4 / 10;
 
     .cursor-container{
         display: none ;
+    }
+
+   .float-left-nav {
+      display: none;
     }
 
     .four-up-posters img {
