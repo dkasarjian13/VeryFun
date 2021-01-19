@@ -3705,6 +3705,23 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 @media screen and (max-width: 800px){
+    .homepagefooter{
+            margin-top: .2rem;
+            overflow: hidden;
+            width: 100vw;
+            background-color: var(--footer);
+            transition: 0.15s ease-in-out;
+        }
+
+
+    .veryfun-logo {
+        padding-top: 1.2rem;
+        width: 12rem;
+        padding-left: 0.5rem;
+        display: inline-block;
+    }
+    
+    
 
     .footerbuttons{
         text-align: center;
