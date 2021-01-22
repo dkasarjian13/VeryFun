@@ -2035,7 +2035,7 @@ letter-spacing: -4px;
 }
 
 .saturdays .caption .overlay {
-    border-top: 1px solid var(--white);
+    border-top: 1px solid var(--white) !important;
 }
 
 .saturdays .caption .overlay .overlay-row>div {
@@ -2109,7 +2109,7 @@ letter-spacing: -4px;
 }
 
 .caption .overlay .overlay-row>div:first-of-type {
-	padding-left: 0px;
+	padding-left: 1rem;
 }
 
 .section.grey{
@@ -3871,6 +3871,18 @@ grid-area: 14 / 1 / 4 / 10;
     height: 15rem;
     margin-top: 2rem;
     margin-bottom: 5.5rem;
+}
+
+.section-title{
+    margin-left: unset;
+}
+
+.slideshow h1{
+    padding-left: unset;
+}
+
+.caption .icons, .caption .count{
+    top: 24px;
 }
 
 
