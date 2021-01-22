@@ -1707,7 +1707,7 @@ object-fit: cover;
 .title.padding.big p{
     font-family: var(--sans);
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.5rem;
     max-width: 47ch;
     padding-left: 4rem;
 
@@ -3809,6 +3809,75 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 @media screen and (max-width: 800px){
+
+    .white-cb-full h1{
+        font-size: 5rem;
+    max-width: 10ch;
+    margin: 0 auto;
+    letter-spacing: -0.5rem;
+    line-height: 3.7rem;
+    color: var(--navgrey);
+    text-align: center;
+    }
+
+    .white-cb-full p {
+        font-size: 2.75rem;
+        margin-top: -1rem;
+        font-family: var(--serif);
+        letter-spacing: -.25rem;
+        line-height: 6rem;
+        color: var(--navgrey);
+        text-align: center;
+    }
+
+    .title.padding.big h1{
+        font-family: var(--sans);
+    font-size: 3.2rem;
+    display: table;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: unset;
+    letter-spacing: -.2rem;
+}
+
+
+.title.padding.big h1 span{
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    display: block;
+    line-height: 5rem;
+    padding-left: 0rem;
+}
+
+.title.padding.big p{
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 47ch;
+    padding-left: .8rem;
+}
+
+.title.padding.big .projectcredits h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: unset;
+    padding-left: .8rem;
+    letter-spacing: -.03rem;
+
+}
+
+    .white-cb-full{
+        width: 100%;
+    height: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 5.5rem;
+}
+
+
+
+ 
+
+
     .homepagefooter{
             margin-top: .2rem;
             overflow: hidden;
@@ -3961,7 +4030,7 @@ width: 100%;
     .title.padding.big h1 {
         font-family: "WhyteInktrap-Light" !important;
         font-size: 3rem;
-        padding-left: .8rem;
+        padding-left: unset;
         letter-spacing: -.2rem;
     }
 
