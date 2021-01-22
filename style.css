@@ -170,6 +170,29 @@
     fill: var(--green);  
 }
 
+.eyes{
+    width: 23vw;
+    padding-top: 2rem;
+    fill: var(--navgrey);
+    float: right;
+    padding-right: 7rem;
+}
+
+.eyediv{
+    height: 5rem;
+}
+
+.eyesicon{
+    fill: var(--white);
+    width: 2rem;
+}
+
+.interrobang{
+    width: 50px;
+    margin-top: -2rem;
+    fill: white;
+}
+
 
 .veryfun-logo {
     padding-top: 6px;
@@ -390,7 +413,7 @@ nav.header.nav-up {
 }
 
 nav.header * {
-    line-height: 4.5rem;
+    line-height: 3rem;
 }
 
 nav.header .logo,
@@ -424,6 +447,9 @@ nav.header .navigation * {
         display: block;
     }
 
+    .saturdays ::selection{
+        background: var(--dodgerblue);
+    }
     
     :root{
         --serif:"tesseractweb-lightitalic";
@@ -443,6 +469,7 @@ nav.header .navigation * {
         --footer:#6d7e8e;
         --seriousgray:#EFF0F4;
         --white:white;
+        --dodgerblue:#1e90ff;
         --purple:#601df8;
         --midnight:#212121;
         --yellow:rgb(240, 225, 26);
@@ -946,6 +973,14 @@ nav.header .navigation * {
             
         }
 
+        .saturdays .cursor-container{
+            background-color:var(--dodgerblue);  
+        }
+
+        .saturdays .cursor-text{
+       color:var(--white);  
+        }
+
         .Noscento .cursor-text{
             color:var(--ghostgray);
         }
@@ -1433,7 +1468,7 @@ div.thirdwidth-project.aos-init.aos-animate{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(assets/images/thumbs/projects/SATURDAYS/heroimage/SATURDAYSHEROIMAGE.jpg);
+    background-image: url(assets/images/thumbs/projects/SATURDAYS/SATURDAYS_BAG_1_dk_head.jpg);
 }
 
 
@@ -1616,8 +1651,14 @@ object-fit: cover;
 }
 
 .section-title {
-	text-align: center;
+    text-align: center;
+    margin-left: 1rem;
 }
+
+.section-title-right {
+    margin-right: 1rem;
+}
+
 
 
 
@@ -1647,23 +1688,25 @@ object-fit: cover;
 
 .title.padding.big h1{
     font-family: "WhyteInktrap-Light" !important;
-    font-size: 2.5rem;
-    padding-left: 1rem;
+    font-size: 3.5rem;
+    padding-left: 2rem;
     letter-spacing: -.2rem;
 
 }
 
 .title.padding.big h1 span{
-    font-family: "WhyteInktrap-Light";
-    font-size: 2.5rem;
+    font-family: var(--serif);
+    font-size: 3.5rem;
+    padding-left: .5rem;
 
 }
 
 .title.padding.big p{
-    font-family: "WhyteInktrap-Light";
+    font-family: var(--sans);
+    font-size: 1.2rem;
+    line-height: 1.5;
     max-width: 47ch;
-    padding-left: 1rem;
- 
+    padding-left: 4rem;
 
 }
 
@@ -1691,6 +1734,14 @@ object-fit: cover;
 	width: auto;
 	max-width: 100%;
 	max-height: 75vh;
+}
+
+.saturdays .slideshow h1{
+    color: var(--white);
+}
+
+.saturdays .caption h2{
+    color: var(--white);
 }
 
 .slideshow h1 {
@@ -1792,7 +1843,7 @@ object-fit: cover;
 	position: relative;
     bottom: 29px;
     text-align: center;
-    color:#9c9c9c;
+    color: var(--white);
     font-size: 20px;
     letter-spacing: -1px;
 }
@@ -1824,14 +1875,7 @@ letter-spacing: -4px;
     padding-bottom: 10.4rem;
 }
 
-.text.projectcredits{
-	max-width: 480px !important;
-    padding: 0px 10px 15px 10px;
-    margin: 0px auto;
-    text-align: center;
-    color: #601df8;
-    font-size: 12px !important;
-}
+
 
 .section#header {
 	border-top: 0px;
@@ -1968,7 +2012,7 @@ letter-spacing: -4px;
 
 .icon2{
 	height: 100px;
-    margin-top: -60px;
+    margin-top: -46px;
     display: inline-block;
 }
 
@@ -1985,6 +2029,45 @@ letter-spacing: -4px;
 
 .icon-credits {
 	cursor: pointer;
+}
+
+.saturdays .caption .overlay {
+    border-top: 1px solid var(--white);
+}
+
+.saturdays .caption .overlay .overlay-row>div {
+    display: table-cell;
+    color: var(--white);
+	border-right: 1px solid var(--white);
+	padding: 10px;
+}
+
+.white-cb-full{
+    width: 100%;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+
+}
+
+.white-cb-full h1{
+    font-size: 11rem;
+    max-width: 10ch;
+    margin: 0 auto;
+    letter-spacing: -1rem;
+    line-height: 9rem;
+    color: var(--navgrey);
+    text-align: center;
+}
+
+.white-cb-full p{
+    font-size: 5rem;
+    margin-top: -1rem;
+    font-family: var(--serif);
+    letter-spacing: -.5rem;
+    line-height: 9rem;
+    color: var(--navgrey);
+    text-align: center;
 }
 
 .caption .overlay {
@@ -2026,9 +2109,13 @@ letter-spacing: -4px;
 	padding-left: 0px;
 }
 
+.section.grey{
+    border-top: var(--navgrey);
+}
+
 .section.grey,
 .section.grey .carousel {
-	background-color: #ededed;
+	background-color: var(--navgrey);
 }
 
 .section.black,
@@ -2861,15 +2948,7 @@ td.hover * {
 .mobile-navigation .contact {
 	border: none;
 }
-    .header {
-		display: none;
-	}
-	.header.mobile {
-		display: block;
-    top: 0px !important;
-    height: 55px !important;
-
-	}
+  
 	.mobile-list {
 		float: right;
     }
@@ -3177,6 +3256,12 @@ video {
 
 .Guccigrip .layout2 {
     color: var(--purple);
+    display: -webkit-inline-box;
+}
+
+
+.saturdays .layout2 {
+    color: var(--navgrey);
     display: -webkit-inline-box;
 }
 
@@ -3635,7 +3720,8 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 .title .bottom {
-    width: calc(100%);    position: absolute;
+    width: calc(100%);    
+    position: absolute;
     bottom: 0px;
     height: initial;
     float: left;
@@ -3663,10 +3749,19 @@ grid-area: 14 / 1 / 4 / 10;
     font-size: .9rem;
     display: inline-block;
     }
+
+    .title.padding.big .projectcredits h1{
+    font-size: 1.5rem;
+    padding-left: 4rem;
+    letter-spacing: -.05rem;
+}   
+
+.title.padding.big .projectcredits p{
+   margin-top:-.5rem;
+}   
     
 
 .title p {
-    overflow:auto;
 }
 
 @media screen and (max-width: 2400px) {
