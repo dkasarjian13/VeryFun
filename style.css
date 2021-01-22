@@ -161,6 +161,9 @@
 }
 
 
+.saturdays .logotest{
+    fill: var(--dodgerblue);
+}
 .logotest{
     fill: var(--purple);
     transition:  0.15s ease-in-out;
@@ -2856,6 +2859,10 @@ td.hover * {
 
 @media screen and (max-width: 1023px){
 
+    .eyes{
+        display: none;
+    }
+
 .header-play, .header-studio, .header-music, .header-shop, .header-work {
     font-size: 2rem;
 }
@@ -3751,13 +3758,15 @@ grid-area: 14 / 1 / 4 / 10;
     }
 
     .title.padding.big .projectcredits h1{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 4rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -.03rem;
 }   
 
 .title.padding.big .projectcredits p{
    margin-top:-.5rem;
+   font-size: .8rem;
+}
 }   
     
 
