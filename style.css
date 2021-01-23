@@ -465,6 +465,7 @@ nav.header .navigation * {
         --lightgray:#fbfbfb;
         --ghostgray:#F2F2F4;
         --navgrey:#BEC3CC;
+        --navgreytext:#969faf;
         --gold:#FFB100;
         --twilightgrey:#a7a7a7;
         --darktwilight:#838383;
@@ -3268,7 +3269,7 @@ video {
 
 
 .saturdays .layout2 {
-    color: var(--navgrey);
+    color: var(--navgreytext);
     display: -webkit-inline-box;
 }
 
