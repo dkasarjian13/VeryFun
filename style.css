@@ -3758,6 +3758,14 @@ grid-area: 14 / 1 / 4 / 10;
     display: inline-block;
     }
 
+    .projectcredits{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 2.6em;
+        grid-gap: 16px;
+    }
+
     .title.padding.big .projectcredits h1{
     font-size: 1rem;
     padding-left: 4rem;
@@ -3765,8 +3773,9 @@ grid-area: 14 / 1 / 4 / 10;
 }   
 
 .title.padding.big .projectcredits p{
-   margin-top:-.5rem;
+   margin-top:-1rem;
    font-size: .8rem;
+   white-space: nowrap;
 }
 
     
@@ -3810,6 +3819,17 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 @media screen and (max-width: 800px){
+
+    .projectcredits{
+        grid-template-columns: unset;
+        display: contents;
+    }
+
+    .title.padding.big .projectcredits p{
+        margin-top: -.5rem;
+    font-size: .8rem;
+    white-space: nowrap;
+    }
 
     .white-cb-full h1{
         font-size: 5rem;
@@ -3970,7 +3990,7 @@ grid-area: 14 / 1 / 4 / 10;
     }
 
     #intro{
-        display: inline-table;
+        display: unset;
     }
 
     #tickerwrap {
