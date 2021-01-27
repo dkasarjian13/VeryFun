@@ -100,6 +100,10 @@
     fill: var(--seriousgray);
 }
 
+.div1pc{
+    white-space: nowrap;
+}
+
 
 
 /***************************************** NAVI HEADER *****************************************/
@@ -3760,13 +3764,15 @@ grid-area: 14 / 1 / 4 / 10;
 
     .projectcredits{
         margin-top: 1rem;
+        max-width: 2rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 2.6em;
-        grid-gap: 16px;
+        grid-gap: 16px 0px;
     }
 
     .title.padding.big .projectcredits h1{
+        white-space: nowrap;
     font-size: 1rem;
     padding-left: 4rem;
     letter-spacing: -.03rem;
@@ -3989,9 +3995,7 @@ grid-area: 14 / 1 / 4 / 10;
         display: inline;
     }
 
-    #intro{
-        display: unset;
-    }
+
 
     #tickerwrap {
 width: 100%;
