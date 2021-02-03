@@ -1654,8 +1654,9 @@ object-fit: cover;
 }
 
 .Noscento .section{
-    border-top: 1px solid var(--navgrey);	padding-bottom: 8px;
- 
+    border-top: 1px solid var(--navgrey);
+    border-bottom: 1px solid var(--navgrey);
+    padding-bottom: 8px;
 }
 
 .section-title {
@@ -2050,12 +2051,15 @@ letter-spacing: -4px;
 	padding: 10px;
 }
 
+.Noscento .white-cb-full, .Noscento .white-cb-full h1, .Noscento .white-cb-full p{
+    background-color: var(--black);
+    color: var(--green) !important;
+}
+
 .white-cb-full{
     width: 100%;
-    height: 25rem;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-
+    height: auto;
+   
 }
 
 .white-cb-full h1{
@@ -2711,6 +2715,61 @@ td.hover * {
         width: 100vw;;
         border-right: none;
     }
+
+    .eyes{
+        display: none;
+    }
+
+    .title.padding.big p{
+        font-family: var(--sans);
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 47ch;
+        padding: 0;
+    }
+
+    .title.padding.big h1{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .title.padding.big .projectcredits h1{
+        white-space: nowrap;
+        font-size: 1rem;
+        text-align: unset;
+        padding-left: 0 !important;
+        letter-spacing: -.03rem;
+    }
+
+    .title.padding.big .projectcredits p{
+        margin-top: -1rem;
+        font-size: .8rem;
+        white-space: nowrap;
+        text-align: left;
+        padding-left: unset;
+    }
+.projectcredits {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: none !important;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-auto-rows: auto;
+}
+
+.saturdays .projectcredits{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em 2em;
+    padding-left: 0rem;
+
+}
 
     .section#credits{
         display: block;
@@ -3516,7 +3575,7 @@ video {
 
 .layouttwo>div,
 .layout2>div {
-    width: calc(50% - 0px);
+    width: calc(49% - 0px);
     height: 36.125vw;
     float: left;
     padding-right: 0px;
@@ -3527,6 +3586,7 @@ video {
 .layout2>div:first-of-type{
     padding-right: 2px;
     padding-bottom: 4px;
+    height: auto;
 }
 
 .layouttwo>div:last-of-type{
@@ -3694,7 +3754,7 @@ grid-area: 14 / 1 / 4 / 10;
 }
 
 .layout5{
-    width: calc(60% - 0px);
+    width: calc(60% - 4px) !important;
     height: 21.094vw;
     padding-bottom: 4px;
     padding-left: 4px;
@@ -3764,11 +3824,13 @@ grid-area: 14 / 1 / 4 / 10;
 
     .projectcredits{
         margin-top: 1rem;
+        margin-bottom: 1rem;
         max-width: 2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 2.6em;
-        grid-gap: 16px 0px;
+        grid-auto-rows: auto;
+        grid-gap: 1em 2em;
+        padding-left: 4rem;
     }
 
     .title.padding.big .projectcredits h1{
@@ -3784,10 +3846,13 @@ grid-area: 14 / 1 / 4 / 10;
    white-space: nowrap;
 }
 
+.projectcredits .div1 p, h1{
+padding-left: 0em !important;
+} 
+
     
 
-.title p {
-}
+
 
 @media screen and (max-width: 2400px) {
 
@@ -3826,10 +3891,6 @@ grid-area: 14 / 1 / 4 / 10;
 
 @media screen and (max-width: 800px){
 
-    .projectcredits{
-        grid-template-columns: unset;
-        display: contents;
-    }
 
     .title.padding.big .projectcredits p{
         margin-top: -.5rem;
@@ -3888,17 +3949,11 @@ grid-area: 14 / 1 / 4 / 10;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: unset;
-    padding-left: .8rem;
+    padding-left: 0;
     letter-spacing: -.03rem;
 
 }
 
-    .white-cb-full{
-        width: 100%;
-    height: 15rem;
-    margin-top: 2rem;
-    margin-bottom: 5.5rem;
-}
 
 .section-title{
     margin-left: unset;
@@ -4102,6 +4157,56 @@ width: 100%;
 }
 
 
+
+}
+
+@media screen and (max-width: 450px){
+
+
+.projectcredits{
+    margin: 1em;
+    padding-left: 0rem;
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+
+ .Noscento #intro.layout2>div:last-of-type video{
+    border-top: 1px solid white;
+}
+
+.layout2 img, .layout2 video, .layouttwo img, .layouttwo video, .layout3 img, .layout3 video, .layout4 img, .layout4 video, .layout6 img, .layout6 video, .layout7 img, .layout7 video, .layout8 img, .layout8 video, .layout8two img, .layout8two video, .layout8three img, .layout8three video, .workgrid-div1 img, .workgrid-div1 video, .workgrid-div2 img, .workgrid-div2 video, .workgrid-div3 img, .workgrid-div3 video, .workgrid-div4 img, .workgrid-div4 video, .workgrid-div5 img, .workgrid-div5 video, .workgrid-div6 img, .workgrid-div6 video, .workgrid-div7 img, .workgrid-div7 video, .workgrid-div8 img, .workgrid-div8 video, .workgrid-div9 img, .workgrid-div9 video, .workgrid-div10 img, .workgrid-div10 video, .workgrid-div11 img, .workgrid-div11 video, .workgrid-div12 img, .workgrid-div12 video, .workgrid-div13 img, .workgrid-div13 video, .workgrid-div14 img, .workgrid-div14 video, .workgrid-div15 img, .workgrid-div15 video, {
+    width: 100%;
+    height: 100%;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-sizing: border-box;
+}
+
+.Noscento .layout1 video{
+    padding-bottom: .5rem;
+    background: black;
+    height:25vh;
+}
+
+.layoutphotogrid{
+    background: var(--midnight); 
+    padding-top: unset; 
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+
+.layoutphotogrid>div{
+    width: unset;
+    background: black;
+    padding-top: .5rem; 
+    padding-left: .5rem;
+    padding-right: .5rem; 
+    box-sizing: border-box;
+}
+
+.layoutphotogrid>div:last-of-type{
+    padding-bottom: .5rem;
+}
 
 }
 
