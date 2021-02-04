@@ -1912,6 +1912,7 @@ letter-spacing: -4px;
     display: inline-block;
     padding-left: 0px;
     padding-right: 0px;
+    float: unset;
 }
 
 .Painkiller.section#header{
@@ -3358,7 +3359,7 @@ video {
 .layoutphotogrid {
     width: 100%;
     height: auto;
-    float: left;
+    /*float: left;*/
   
 }
 .layouttwo>div,
@@ -3601,7 +3602,7 @@ video {
 
 .layout3>div:first-of-type,
 .layout4>div:last-of-type {
-    width: calc(75% - -4px);
+    width: calc(75% - 0px);
     height: 42.187vw;
     float: left;
     padding-top: 4px;
