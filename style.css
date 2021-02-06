@@ -2283,6 +2283,19 @@ letter-spacing: -4px;
 	padding: 10px;
 }
 
+.white-cb-full-intro{
+    border-top: 10px solid white;
+    background-color: var(--orangedust);
+}
+
+.white-cb-full-intro h1{
+   color: var(--purplegrey)
+}
+
+.white-cb-full-intro p{
+    color: var(--gold)
+ }
+
 .white-cb-full-eyes{
     border-top: 10px solid white;
     background-color: var(--dodgerblue);
