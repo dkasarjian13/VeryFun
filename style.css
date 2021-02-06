@@ -2355,7 +2355,7 @@ letter-spacing: -4px;
     color: var(--green) !important;
 }
 
-.white-cb-full{
+.white-cb-full, .white-cb-full-intro{
     overflow: hidden;
     width: 100%;
     height: auto;
