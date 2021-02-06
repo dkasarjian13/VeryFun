@@ -2337,7 +2337,7 @@ letter-spacing: -4px;
     background-color: var(--forestgreen);
 }
 
-.homepage .white-cb-full h1, .white-cb-full-intro{
+.homepage .white-cb-full h1, .white-cb-full-intro h1{
     color: var(--purplegrey);
     font-size: 6vw;
     max-width: 15ch;
