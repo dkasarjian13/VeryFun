@@ -2337,7 +2337,7 @@ letter-spacing: -4px;
     background-color: var(--forestgreen);
 }
 
-.homepage .white-cb-full h1{
+.homepage .white-cb-full h1, .white-cb-full-intro{
     color: var(--purplegrey);
     font-size: 6vw;
     max-width: 15ch;
@@ -2372,7 +2372,7 @@ letter-spacing: -4px;
     text-align: left;
 }
 
-.white-cb-full p{
+.white-cb-full p, .white-cb-full-intro p{
     font-size: 5rem;
     margin-top: -1rem;
     font-family: var(--serif);
