@@ -420,7 +420,7 @@ nav.header.nav-up {
 }
 
 nav.header * {
-    line-height: 3rem;
+    line-height: 4rem;
 }
 
 nav.header .logo,
@@ -454,6 +454,10 @@ nav.header .navigation * {
         display: block;
     }
 
+    .Guccigrip .white-cb-full ::selection{
+        background: var(--forestgreen);
+    }
+
     .saturdays ::selection{
         background: var(--dodgerblue);
     }
@@ -469,8 +473,11 @@ nav.header .navigation * {
         --lightgray:#fbfbfb;
         --ghostgray:#F2F2F4;
         --navgrey:#BEC3CC;
+        --forestgreen:#296D64;
         --navgreytext:#969faf;
-        --gold:#FFB100;
+        --gold:#FFCC00;
+        --purplegrey:#E3DBFF;
+        --orangedust:#FA512C;
         --twilightgrey:#a7a7a7;
         --darktwilight:#838383;
         --green:#7FFE00;
@@ -1344,7 +1351,7 @@ font-size:  1.8rem !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(assets/images/thumbs/projects/GUCCIGRIP/heroimage/GUCCI\ HERO\ IMAGE\ 2.jpg);
+    background-image: url(assets/images/thumbs/projects/GUCCIGRIP/heroimage/GUCCI_HERO_IMAGE_2.jpg);
 }
 
 .heroimage-fullwidth-noscento{
@@ -1624,6 +1631,230 @@ object-fit: cover;
 }
 
 
+.hit-area {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  .hitbox {
+    width: 100px;
+    height: 100px;
+    float:left;
+  }
+  
+  .eye {
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    left: 25%;
+    top: 40%;
+    background-color: var(--gold);
+    pointer-events: none;
+  }
+  
+  .eye + .eye {
+    left: 55%;
+  }
+  
+  .pupil {
+    position: relative;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--dodgerblue);
+    left: 50%;
+    overflow: hidden;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -10px;
+    transition: all .5s ease;
+  }
+  
+  .pupil2 {
+    position: relative;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--dodgerblue);
+    left: 50%;
+    overflow: hidden;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -10px;
+    transition: all .5s ease;
+  }
+  
+  
+  .eye2 {
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    left: 25%;
+    top: 40%;
+    background-color: var(--gold);
+    pointer-events: none;
+  }
+  
+  .eyelid {
+    width: 150px;
+    height: 100px;
+    background-color: var(--dodgerblue);
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    pointer-events: none;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 4.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 1s;
+    -webkit-transition: all .5s ease;
+  }
+  
+  .eyelid + .eyelid {
+    left: 50%;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      top: 25%;
+    }
+    95% {
+      top: 25%;
+    }
+    100% {
+      top: 40%;
+    }
+  }
+  
+  .hitbox:hover ~ .eyelid {
+    -webkit-transform: rotate(-10deg);
+  }
+  
+  .hitbox:hover ~ .eyelid:nth-of-type(2n+1) {
+    -webkit-transform: rotate(10deg);
+  }
+  
+  #c-3:hover ~ .eyelid {
+    -webkit-transform:  rotate(15deg);
+  }
+  
+  #c-3:hover ~ .eyelid:nth-of-type(2n+1) {
+    -webkit-transform: rotate(-15deg);
+  }
+  
+  #c-3:hover ~ .eye .pupil {
+    background-color: var(--orangedust);
+  }
+  
+  #a-1:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(60deg) translate(-30px);
+  }
+  
+  #a-2:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(80deg) translate(-30px);
+  }
+  
+  #a-3:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(90deg) translate(-30px);
+  }
+  
+  #a-4:hover ~.eye > .pupil {
+    -webkit-transform: rotate(100deg) translate(-30px);
+  }
+  
+  #a-5:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(120deg) translate(-30px);
+  }
+  
+  #b-1:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(50deg) translate(-25px);
+  }
+  
+  #b-2:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(70deg) translate(-25px);
+  }
+  
+  #b-3:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(90deg) translate(-25px);
+  }
+  
+  #b-4:hover ~.eye > .pupil {
+    -webkit-transform: rotate(110deg) translate(-25px);
+  }
+  
+  #b-5:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(130deg) translate(-25px);
+  }
+  
+  #c-1:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(0deg) translate(-25px);
+  }
+  
+  #c-2:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(0deg) translate(-10px);
+  }
+  
+  #c-3:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(0deg) translate(20px);
+  }
+  
+  #c-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+    -webkit-transform: rotate(0deg) translate(-20px);
+  }
+  
+  #c-4:hover ~.eye > .pupil {
+    -webkit-transform: rotate(0deg) translate(10px);
+  }
+  
+  #c-5:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(0deg) translate(25px);
+  }
+  
+  #d-1:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-50deg) translate(-25px);
+  }
+  
+  #d-2:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-70deg) translate(-25px);
+  }
+  
+  #d-3:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-90deg) translate(-25px);
+  }
+  
+  #d-4:hover ~.eye > .pupil {
+    -webkit-transform: rotate(-110deg) translate(-25px);
+  }
+  
+  #d-5:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-130deg) translate(-25px);
+  }
+  
+  #e-1:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-40deg) translate(-30px);
+  }
+  
+  #e-2:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-60deg) translate(-30px);
+  }
+  
+  #e-3:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-80deg) translate(-30px);
+  }
+  
+  #e-4:hover ~.eye > .pupil {
+    -webkit-transform: rotate(-100deg) translate(-30px);
+  }
+  
+  #e-5:hover ~ .eye > .pupil {
+    -webkit-transform: rotate(-120deg) translate(-30px);
+  }
 
 
 /***************************************** SINGLE PROJECT *****************************************/
@@ -1745,11 +1976,11 @@ object-fit: cover;
 	max-height: 75vh;
 }
 
-.saturdays .slideshow h1{
+.saturdays .slideshow h1, .Guccigrip .slideshow h1{
     color: var(--white);
 }
 
-.saturdays .caption h2{
+.saturdays .caption h2, .Guccigrip .caption h2{
     color: var(--white);
 }
 
@@ -2052,25 +2283,80 @@ letter-spacing: -4px;
 	padding: 10px;
 }
 
+.white-cb-full-eyes{
+    border-top: 10px solid white;
+    background-color: var(--dodgerblue);
+}
+
+.white-cb-full-eyes h1{
+    font-family: var(--serif);
+    color: var(--orangedust);
+    font-size: 10vw;
+    float: left;
+    display: inline-block;
+    position: absolute;
+}
+
+.white-cb-full-eyes h1 span{
+    font-family: var(--serif);
+    color: var(--orangedust);
+    font-size: 10vw;
+    float: right;
+    display: inline-block;
+}
+
+.Guccigrip .white-cb-full{
+    overflow: hidden;
+    background-color: var(--orangedust);
+}
+.Guccigrip .white-cb-full h1{
+    color: var(--purplegrey);
+}
+
+
+.Guccigrip .white-cb-full p{
+    color: #FFCC00;
+
+}
+.homepage .white-cb-full{
+    border-top: 10px solid white;
+    overflow: hidden;
+    background-color: var(--forestgreen);
+}
+
+.homepage .white-cb-full h1{
+    color: var(--purplegrey);
+    font-size: 6vw;
+    max-width: 15ch;
+    line-height: 5vw;
+    letter-spacing: -0.4vw;
+
+}
+.homepage .white-cb-full p{
+    color: var(--orangedust);
+}
+
 .Noscento .white-cb-full, .Noscento .white-cb-full h1, .Noscento .white-cb-full p{
     background-color: var(--black);
+    overflow: hidden;
     color: var(--green) !important;
 }
 
 .white-cb-full{
+    overflow: hidden;
     width: 100%;
     height: auto;
    
 }
 
 .white-cb-full h1{
-    font-size: 11rem;
+    font-size: 14vw;
+        padding: 1rem;
     max-width: 10ch;
-    margin: 0 auto;
     letter-spacing: -1rem;
-    line-height: 9rem;
+    line-height: 10.5vw;
     color: var(--navgrey);
-    text-align: center;
+    text-align: left;
 }
 
 .white-cb-full p{
@@ -2080,7 +2366,8 @@ letter-spacing: -4px;
     letter-spacing: -.5rem;
     line-height: 9rem;
     color: var(--navgrey);
-    text-align: center;
+    text-align: right;
+    padding-right: 2rem;
 }
 
 .caption .overlay {
@@ -2144,7 +2431,8 @@ letter-spacing: -4px;
 }
 
 .section.black * {
-	color: rgb(198, 198, 198);
+    color: rgb(198, 198, 198);
+    fill: var(--navgrey);
 }
 
 .section.black .caption {
@@ -3332,7 +3620,7 @@ video {
 }
 
 
-.saturdays .layout2 {
+.saturdays .layout2, .Guccigrip .layout2 {
     color: var(--navgreytext);
     display: -webkit-inline-box;
 }
@@ -3847,7 +4135,7 @@ grid-area: 14 / 1 / 4 / 10;
    white-space: nowrap;
 }
 
-.projectcredits .div1 p, h1{
+.projectcredits .div1 p, .projectcredits .div1 h1{
 padding-left: 0em !important;
 } 
 
@@ -3900,23 +4188,23 @@ padding-left: 0em !important;
     }
 
     .white-cb-full h1{
-        font-size: 5rem;
+        font-size: 16vw;
     max-width: 10ch;
-    margin: 0 auto;
-    letter-spacing: -0.5rem;
-    line-height: 3.7rem;
+    letter-spacing: -1.2vw;
+    line-height: 12vw;
     color: var(--navgrey);
-    text-align: center;
+    text-align: left;
     }
 
     .white-cb-full p {
-        font-size: 2.75rem;
-        margin-top: -1rem;
-        font-family: var(--serif);
-        letter-spacing: -.25rem;
-        line-height: 6rem;
-        color: var(--navgrey);
-        text-align: center;
+            font-size: 2.75rem;
+            margin-top: 0rem;
+            padding-bottom: .5em;
+            font-family: var(--serif);
+            letter-spacing: -.25rem;
+            line-height: .76em;
+            color: var(--navgrey);
+            text-align: right;
     }
 
     .title.padding.big h1{
