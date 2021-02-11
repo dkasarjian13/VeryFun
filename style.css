@@ -200,6 +200,9 @@
     fill: white;
 }
 
+.watchjournal .eyesicon, .watchjournal .interrobang {
+    fill: var(--navgreytext);
+}
 
 .veryfun-logo {
     padding-top: 6px;
@@ -467,6 +470,7 @@ nav.header .navigation * {
         --sans:"WhyteInktrap-Light";
         --highlight:#00ff00;
         --black:black;
+        --jetblack:#0d0d0d;
         --spaceblack:#3F4364;
         --border-radius:6px;
         --black-hover:rgb(90, 90, 90);
@@ -1880,7 +1884,7 @@ object-fit: cover;
 .section {
 	/*margin: 0 auto;*/
 	position: relative;
-	border-top: 1px solid #601df8;	padding-bottom: 8px;
+		padding-bottom: 8px;
 	padding-top: 20px !important;
 }
 
@@ -1982,6 +1986,10 @@ object-fit: cover;
 
 .saturdays .caption h2, .Guccigrip .caption h2{
     color: var(--white);
+}
+
+.watchjournal .slideshow h1, .watchjournal .caption h2, .watchjournal .count{
+    color: var(--navgreytext);
 }
 
 .slideshow h1 {
@@ -2326,6 +2334,13 @@ letter-spacing: -4px;
     color: var(--purplegrey);
 }
 
+.watchjournal .white-cb-full {
+    background-color: var(--gold);
+}
+.watchjournal .white-cb-full h1{
+    color: var(--orangedust);
+}
+
 
 .Guccigrip .white-cb-full p{
     color: #FFCC00;
@@ -2370,6 +2385,20 @@ letter-spacing: -4px;
     line-height: 10.5vw;
     color: var(--navgrey);
     text-align: left;
+}
+
+.watchjournal .white-cb-full p {
+    font-size: 5rem;
+    margin-top: -1rem;
+    font-family: var(--serif);
+    letter-spacing: -.45rem;
+    line-height: 5rem;
+    max-width: 20ch;
+    float: left;
+    padding-bottom: 2rem;
+    color: var(--dodgerblue);
+    text-align: left;
+    padding-left: 2rem;
 }
 
 .white-cb-full p, .white-cb-full-intro p{
@@ -2434,6 +2463,10 @@ letter-spacing: -4px;
 .section.black,
 .section.black .carousel {
 	background-color: #000;
+}
+
+.watchjournal .section.black, .watchjournal .section.black .carousel{
+    background-color: var(--jetblack);
 }
 
 
@@ -3882,6 +3915,11 @@ video {
     float: left;
     padding-right: 0px;
     box-sizing: border-box;
+}
+
+.watchjournal .layouttwo>div,
+.watchjournal .layout2>div:first-of-type{
+ color: var(--navgreytext);
 }
 
 .layouttwo>div,
