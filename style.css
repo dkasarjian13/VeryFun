@@ -488,6 +488,7 @@ nav.header .navigation * {
         --footer:#6d7e8e;
         --seriousgray:#EFF0F4;
         --white:white;
+        --seriousblue: #2C6FDA;
         --dodgerblue:#1e90ff;
         --purple:#601df8;
         --midnight:#212121;
@@ -1646,6 +1647,7 @@ object-fit: cover;
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    z-index: 2;
   }
   
   .hitbox {
@@ -1674,7 +1676,7 @@ object-fit: cover;
     width: 50px;
     height: 80px;
     border-radius: 50%;
-    background-color: var(--dodgerblue);
+    background-color: var(--seriousblue);
     left: 50%;
     overflow: hidden;
     top: 50%;
@@ -1688,7 +1690,7 @@ object-fit: cover;
     width: 50px;
     height: 80px;
     border-radius: 50%;
-    background-color: var(--dodgerblue);
+    background-color: var(--seriousblue);
     left: 50%;
     overflow: hidden;
     top: 50%;
@@ -1712,7 +1714,7 @@ object-fit: cover;
   .eyelid {
     width: 150px;
     height: 100px;
-    background-color: var(--dodgerblue);
+    background-color: var(--seriousblue);
     position: absolute;
     left: 20%;
     top: 0%;
@@ -2310,18 +2312,86 @@ letter-spacing: -4px;
 
 .white-cb-full-eyes{
     border-top: 10px solid white;
-    background-color: var(--dodgerblue);
+    background-color: var(--seriousblue);
     overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    height: 30rem;
+    align-items: center;
+ 
+}
+.white-cb-full-eyes p{
+    font-family: var(--sans);
+    color: var(--gold);
+    font-size: 6vw;
+    letter-spacing: -0.35vw;
+    margin: 0 auto;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+
 }
 
-.white-cb-full-eyes h1{
+.white-cb-full-eyes p span{
+    font-family: var(--serif);
+    font-size: 6vw;
+    letter-spacing: -0.35vw;
+    margin: -5em 0 0 auto;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.white-cb-full-eyes p2{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-family: var(--serif);
+    color: var(--purplegrey);
+    font-size: 3rem;
+    letter-spacing: -.25rem;
+    margin-bottom: 2rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.white-cb-full-eyes-text{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+
+}
+
+.white-cb-full-eyes h1:first-of-type{
     font-family: var(--serif);
     color: var(--orangedust);
     font-size: 10vw;
-    float: left;
+    width: 100%;
+    margin-left: 4rem;
+    letter-spacing: -.65vw;
     display: inline-block;
-    position: absolute;
 }
+
+.white-cb-full-eyes h1:last-of-type{
+    font-family: var(--sans);
+    color: var(--orangedust);
+    font-size: 10vw;
+    margin-right: 4rem;
+    letter-spacing: -.75vw;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+
+
 
 .white-cb-full-eyes h1 span{
     font-family: var(--serif);
