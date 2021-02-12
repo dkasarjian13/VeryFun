@@ -2302,9 +2302,6 @@ letter-spacing: -4px;
     background-color: var(--orangedust);
 }
 
-.white-cb-full-intro h1{
-   color: var(--purplegrey)
-}
 
 .white-cb-full-intro p{
     color: var(--gold)
@@ -2324,6 +2321,7 @@ letter-spacing: -4px;
 .white-cb-full-eyes p{
     font-family: var(--sans);
     color: var(--gold);
+    -webkit-font-smoothing:antialiased;
     font-size: 6vw;
     letter-spacing: -0.35vw;
     margin: 0 auto;
@@ -2428,10 +2426,11 @@ letter-spacing: -4px;
 }
 
 .homepage .white-cb-full h1, .white-cb-full-intro h1{
-    color: var(--purplegrey);
+    color: var(--seriousblue);
     font-size: 6vw;
     max-width: 15ch;
-    line-height: 5vw;
+    padding: 1rem;
+    line-height: 5.8vw;
     letter-spacing: -0.4vw;
     -webkit-font-smoothing: antialiased;
 
@@ -2484,7 +2483,7 @@ letter-spacing: -4px;
     font-family: var(--serif);
     letter-spacing: -.5rem;
     line-height: 9rem;
-    color: var(--navgrey);
+    color: var(--gold);
     text-align: right;
     padding-right: 2rem;
 }
@@ -4319,6 +4318,47 @@ padding-left: 0em !important;
 }
 
 @media screen and (max-width: 800px){
+
+    .eye + .eye{
+        left: 54%;
+    }
+
+    .eye{
+        left:19%;
+    }
+
+    .eyelid{
+        left: 7%;
+    }
+
+    .white-cb-full-eyes{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .white-cb-full-eyes p, .white-cb-full-eyes p span{
+        font-size: 13vw;
+    }
+
+    .white-cb-full-eyes-text{
+        display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+    width: 100%;
+    top: 49px;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    .white-cb-full-eyes h1:first-of-type{
+        font-size: 16vw;;
+    }
+
+    .white-cb-full-eyes h1:last-of-type{
+        font-size: 16vw;
+        text-align: left;
+    }
 
     .hommeboy .layout1 img{
         width: 100%;
