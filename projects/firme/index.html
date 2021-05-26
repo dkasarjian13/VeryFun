@@ -8,7 +8,7 @@
 
 
 
-<title>VeryFun Studio – Firme Atelier</title>
+<title>SeriouslyFun Studio – Firme Atelier</title>
 <link rel="stylesheet" href="/style.css">
 
 <link href="/assets/bbstyle.css" type="text/css" rel="stylesheet">
@@ -124,7 +124,7 @@
 
         </div>
         <div>
-            <video webkit-playsinline playsinline loop preload="none"  muted><source src="/assets/images/thumbs/projects/FIRME/projectpage/Firme_spin_BlingLOOPED_1.mp4" type="video/mp4" ></video>
+            <video autoplay="autoplay" loop="loop" muted="true" playsinline="true"><source src="/assets/images/thumbs/projects/FIRME/projectpage/Firme_spin_BlingLOOPED_1.mp4" type="video/mp4" ></video>
         </div>
     
     </div>           
@@ -288,6 +288,19 @@
 	    
     	    
 </section>
+
+<script>
+    var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+</script>
 
 <script src="/js/jquery.js"></script>
 <script src="/js/ckin.js"></script>

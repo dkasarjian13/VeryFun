@@ -66,7 +66,7 @@
     transition:  0.15s ease-in-out;
 }
 
-.homepagefooter span b{
+.homepagefooter span b {
     font-family: "WhyteInktrap-Light";
     font-size: 17rem;
     line-height: 7rem;
@@ -109,9 +109,7 @@
 /***************************************** NAVI HEADER *****************************************/
 
 
-.veryfun{
 
-}
 
 .logo-anim-hp-ct{
     position: absolute;
@@ -131,8 +129,8 @@
       -ms-transform: translate3d(0,-50%,0);
       transform: translate3d(0,-50%,0);
   
-  
   }
+
   .logo-anim-sub {
       opacity: 0;
       display: none;
@@ -235,7 +233,6 @@
     width: 85vw !important;
     text-align: left;
     font-size: var(--ms-3)!important;
-    /* letter-spacing: -.03em; */
     -webkit-font-smoothing: antialiased;
     line-height: .96;
 }
@@ -3734,6 +3731,7 @@ video {
 .Noscento .layout2, .hommeboy .layout2 {
     display: -webkit-inline-box;
     background-color: black;
+    overflow: hidden;
 }
 
 .Guccigrip .layout2 {
@@ -3770,6 +3768,7 @@ video {
     width: 100%;
     height: auto;
     /*float: left;*/
+    overflow: hidden;
   
 }
 .layouttwo>div,
@@ -3782,6 +3781,7 @@ video {
 }
 .Noscento .layout1, .hommeboy .layout1{
     background-color: black;
+    overflow: hidden;
 }
 .hommeboy .layout1 img{
     width: auto;
@@ -4319,6 +4319,7 @@ padding-left: 0em !important;
 }
 
 @media screen and (max-width: 800px){
+    
 
     .eye + .eye{
         left: 54%;

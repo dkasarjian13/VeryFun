@@ -409,3 +409,10 @@
 }
 
 }
+
+@media screen and (max-width: 450px) {
+
+.default__controls{
+position: inherit;
+}
+}
