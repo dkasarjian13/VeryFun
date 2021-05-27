@@ -3526,7 +3526,7 @@ td.hover * {
 }
 
 .heroimage-fullwidth, .heroimage-fullwidth-noscento, .heroimage-fullwidth-wos {
-    height: 43vh;
+    height: 70vh;
 margin-left: .5rem;
 margin-right: .5rem;
 width: initial;
@@ -3568,7 +3568,7 @@ div.halfwidth-project.aos-init.aos-animate{
     border-left: none;
     flex-basis: none;
     position: none;
-    height: 43vh;
+    height: 70vh;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3581,7 +3581,7 @@ div.halfwidth-project.aos-init.aos-animate{
     border-left: none;
     flex-basis: none;
     position: none;
-    height: 35vh;
+    height: 70vh;
     padding: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4698,7 +4698,9 @@ width: 100%;
 
 @media screen and (max-width: 450px){
 
-
+    .float-right-nav{
+        padding-top: 1.2rem;
+    }
 .projectcredits{
     margin: 1em;
     padding-left: 0rem;
