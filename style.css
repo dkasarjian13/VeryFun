@@ -699,10 +699,7 @@ nav.header .navigation * {
             margin: 0;
             max-width: 56ch;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            padding-left: 10vh;
             width:85vw !important;
             text-align:left;
             font-size: var(--ms-3)!important;
